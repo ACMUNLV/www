@@ -1,9 +1,7 @@
 export const texts = {
   hero: {
-    // title: `Welcome to UNLV ACM's Web Page!`,
+    title: `Welcome to ACM at UNLV`,
     subtitle: 'You will find everything about UNLV ACM here!',
-    firstOption: 'General Meeting',
-    secondOption: 'ICPC Coding Meetup',
   },
   about: {
     title: 'About Us',

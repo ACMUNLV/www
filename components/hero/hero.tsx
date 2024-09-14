@@ -1,24 +1,26 @@
-import { HeroDeco1 } from '@/components/hero/decoration-1'
-import { HeroDeco2 } from '@/components/hero/decoration-2'
-import { HeroHeader } from '@/components/hero/hero-header'
-import { HeroVideo } from '@/components/hero/hero-video'
-import { cn } from '@/libs/util'
+import { texts } from '@/data/text'
+import { Button } from '@/components/ui/button'
+import Link from 'next/link'
 
 const Hero = () => {
   return (
-    <section
-      id="hero"
-      className={cn(
-        'pb-12 pt-[120px] md:pb-20',
-        'border-b-[1px] dark:border-slate-500',
-        'relative z-10 overflow-hidden',
-        'md:pt-[150px] xl:pt-[180px] 2xl:pt-[210px]'
-      )}
-    >
-      <HeroDeco1 />
-      <HeroDeco2 />
-      <HeroHeader />
-      <HeroVideo />
+    <section className="w-full bg-primary py-48">
+      <div className="flex flex-col items-center space-y-4 text-center">
+        <div className="space-y-2">
+          <h1 className="text-3xl font-bold tracking-tighter text-white sm:text-4xl md:text-5xl lg:text-6xl/none">
+            {texts.hero.title}
+          </h1>
+          <p className="mx-auto max-w-[700px] text-gray-300 md:text-xl">{texts.hero.subtitle}</p>
+        </div>
+        <div className="space-x-4">
+          <Link href="https://involvementcenter.unlv.edu/organization/unlv-acm" target="_blank">
+            <Button variant="outline">Join ACM</Button>
+          </Link>
+          <Link href="/about">
+            <Button variant="outline">Learn More</Button>
+          </Link>
+        </div>
+      </div>
     </section>
   )
 }

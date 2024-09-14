@@ -1,5 +1,4 @@
 import { FooterWrapper } from '@/components/common/footer-wrapper'
-import ThemeToggle from '@/components/common/theme-toggle'
 import { socials } from '@/components/common/socials'
 import { texts } from '@/data/text'
 import Image from 'next/image'
@@ -81,7 +80,6 @@ export default function Footer() {
           </div>
           
           <div className="flex justify-center mx-auto ">
-            <ThemeToggle />
           </div>
         </div>
       </FooterWrapper>

@@ -1,16 +1,21 @@
-import { BsClouds } from 'react-icons/bs'
 import { FaDiscord, FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa'
 
 export const socials = {
   logo: {
     link: '/',
-    alt: 'UNLV ACM',
-    src: '/img/logo.png',
+    alt: 'ACM UNLV',
+    src: '/img/logo.svg',
   },
   socialLinks: [
     { href: 'https://discord.gg/Fz2YwU7U', icon: <FaDiscord />, alt: 'Discord' },
     { href: 'https://github.com/ACMUNLV/', icon: <FaGithub />, alt: 'Github' },
     { href: 'https://www.instagram.com/unlvacm/', icon: <FaInstagram />, alt: 'Instagram' },
+  ],
+  pageLinks: [
+    { href: '/about', name: 'About', alt: 'About Page' },
+    { href: '/events', name: 'Events', alt: 'Events Page' },
+    { href: '/icpc', name: 'ICPC', alt: 'ICPC Page' },
+    { href: '/projects', name: 'Projects', alt: 'Projects Page' },
   ],
 
   blocks: [

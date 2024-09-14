@@ -4,12 +4,15 @@ import 'node_modules/react-modal-video/css/modal-video.css'
 import type { Metadata } from 'next'
 import { siteMetadata, seoKeywords } from '@/data/seo-meta'
 import { ScrollToTop } from '@/components/common/scroll-to-top'
-import { ThemeProviders } from '@/components/providers/providers'
 import { Header } from '@/components/layout/header'
+import AnimatedSVG from '@/components/animated-svg'
 
 export const metadata: Metadata = {
   keywords: seoKeywords,
-  title: siteMetadata.title,
+  title: {
+    default: siteMetadata.title,
+    template: `%s | ${siteMetadata.title}`,
+  },
   icons: { icon: siteMetadata.icon },
   description: siteMetadata.description,
   metadataBase: new URL('https://acm.cs.unlv.edu/'),
@@ -42,11 +45,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       */}
       <head />
       <body suppressHydrationWarning className="antialiased">
-        <ThemeProviders>
-          <Header />
-          {children}
-          <ScrollToTop />
-        </ThemeProviders>
+        <Header />
+        {children}
+        <ScrollToTop />
       </body>
     </html>
   )

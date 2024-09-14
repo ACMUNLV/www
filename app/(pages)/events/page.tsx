@@ -2,12 +2,17 @@ import Hero from '@/components/hero/hero'
 import WhatWedo from '@/components/whatwedo/whatwedo'
 import MemberList from '@/components/members/members'
 
-export default function Home() {
+export async function generateMetadata() {
+  return {
+    title: 'Events',
+  }
+}
+
+
+export default function EventsPage() {
   return (
     <>
-      <Hero />
-      <WhatWedo />
-      <MemberList />
+      <h1>Events</h1>
     </>
   )
 }
