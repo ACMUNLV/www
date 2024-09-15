@@ -6,6 +6,8 @@ export const socials = {
     alt: 'ACM UNLV',
     src: '/img/logo.svg',
   },
+
+  // ACM Social Links
   socialLinks: [
     { href: 'https://discord.gg/Zfd6skWVzj', icon: <FaDiscord />, alt: 'Discord' },
     { href: 'https://github.com/ACMUNLV/', icon: <FaGithub />, alt: 'Github' },
@@ -16,28 +18,11 @@ export const socials = {
     },
     { href: 'https://www.instagram.com/unlvacm/', icon: <FaInstagram />, alt: 'Instagram' },
   ],
+
+  // Website Page Links
   pageLinks: [
     { href: '/about', name: 'About', alt: 'About Page' },
     { href: '/events', name: 'Events', alt: 'Events Page' },
-    { href: '/icpc', name: 'ICPC', alt: 'ICPC Page' },
     { href: '/projects', name: 'Projects', alt: 'Projects Page' },
   ],
-
-  // not used rn?
-  // blocks: [
-  //   {
-  //     title: 'Menu',
-  //     links: [
-  //       { href: '/about', text: 'About' },
-  //       { href: '/events', text: 'Events' },
-  //       { href: '/icpc', text: 'ICPC' },
-  //       { href: '/projects', text: 'Projects' },
-  //     ],
-  //   },
-  //   {
-  //     title: 'Socials',
-  //     links: [{ href: 'https://github.com/Thienguen/acm-landing', text: 'Github' }],
-  //   },
-  // ],
-  copyright: 'All rights reserved.',
 }

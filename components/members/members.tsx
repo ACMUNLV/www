@@ -1,18 +1,16 @@
 import Image from 'next/image'
 import { members } from '@/data/members'
 import { Badge } from '@/components/ui/badge'
+import { texts } from '@/data/text'
 
 export default function MemberList() {
   return (
     <section className="mx-auto max-w-6xl px-4 py-12 md:py-20">
       {/* header */}
       <div className="mx-auto max-w-3xl pb-12 text-center md:pb-20" data-aos="fade-up" data-aos-delay="150">
-        <h2 className="h2 mb-4">Meet our team!</h2>
+        <h2 className="h2 mb-4">{texts.members.title}</h2>
 
-        <p className="text-body-color md:text-xl">
-          Our ACM club consists of dedicated and innovative students passionate about advancing computing as a science
-          and a profession.
-        </p>
+        <p className="text-body-color md:text-xl">{texts.members.description}</p>
       </div>
 
       <div
@@ -38,13 +36,9 @@ export default function MemberList() {
               />
             </a>
 
-            <span className="h4">
-              {person.name}
-            </span>
+            <span className="h4">{person.name}</span>
 
-            <span className="ml-1 text-xs text-muted-foreground">
-              {person.pronouns} 
-            </span>
+            <span className="ml-1 text-xs text-muted-foreground">{person.pronouns}</span>
 
             {person.title && (
               <span className={`mb-2 mt-1 text-center font-black ${person.title == 'President' ? 'text-primary' : ''}`}>

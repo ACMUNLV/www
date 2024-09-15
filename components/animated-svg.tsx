@@ -11,7 +11,7 @@ export default function AnimatedSVG() {
   }, [])
   
   return (
-    <div className="bg-muted relative top-20 w-full shadow-sm">
+    <div className="bg-transparent relative top-20 w-full">
       <svg width="1920" height="80" viewBox="0 0 1920 80" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_5_7)">
           <circle cx="569" cy="53" r="8" fill="#B10202" />

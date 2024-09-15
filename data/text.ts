@@ -1,18 +1,56 @@
+/* 
+  Edit texts within here
+*/
+
 export const texts = {
   hero: {
-    title: `Welcome to ACM at UNLV`,
+    title: 'Welcome to ACM at UNLV',
     subtitle: 'You will find everything about UNLV ACM here!',
   },
-  about: {
-    title: 'About Us',
-    description: `
-    Founded in 1947, the Association for Computing Machinery (ACM) is the world’s 
-    largest scientific and education computing society. Our ACM chapter at UNLV
-    works to connect student by hosting workshops, lectures, attending seminars, 
-    and competing in regional coding competitions. We learn from professionals 
-    in the industry, gain coding experience, and land internships! 
-    Anyone with a passion for coding or for Computer Science are welcome to join!
-    `,
+  aboutPage: {
+    'about-us': {
+      title: 'About Us',
+      description: `
+        Founded in 1947, the Association for Computing Machinery (ACM) is the world’s 
+        largest scientific and education computing society. Our ACM chapter at UNLV
+        works to connect student by hosting workshops, lectures, attending seminars, 
+        and competing in regional coding competitions. We learn from professionals 
+        in the industry, gain coding experience, and land internships! 
+        Anyone with a passion for coding or for Computer Science are welcome to join!
+        `,
+      src: '/img/logo-bordered.png',
+      alt: 'ACM UNLV Logo',
+    },
+    'why-join': {
+      title: 'Why Join?',
+      description: `
+        Competitive Programing fasdfasdfasdfasdf  -daniel
+        Open Source Projects asasdffasdfasdf  -daniel
+        Professional Development
+        `,
+      images: [
+        {
+          src: '/img/ICPC.png',
+          alt: 'ICPC / competitive programming',
+        },
+        {
+          src: '/img/ICPC.png',
+          alt: 'ICPC / competitive programming',
+        },
+        {
+          src: '/img/ICPC.png',
+          alt: 'ICPC / competitive programming',
+        },
+      ],
+    },
+    'involvement': {
+      title: 'How To Get Involved?',
+      description: `
+        Get Involed through blah blah blah -daniel
+        `,
+      src: '/img/eh.jpg',
+      alt: 'image most likely to be changed',
+    },
   },
   whatwedo: {
     title: 'What We Do',
@@ -52,6 +90,10 @@ export const texts = {
         img: '/img/network.svg',
       },
     },
+  },
+  members: {
+    title: 'Meet our team!',
+    description: `Our ACM club consists of dedicated and innovative students passionate about advancing computing as a science and a profession.`,
   },
   footer: {
     gaslighting: `Our school chapter UNLV ACM works to connect student by hosting workshops, 

@@ -1,5 +1,5 @@
 import { FooterWrapper } from '@/components/common/footer-wrapper'
-import { socials } from '@/data/socials'
+import { socials } from '@/data/links'
 import { texts } from '@/data/text'
 import Image from 'next/image'
 import Link from 'next/link'

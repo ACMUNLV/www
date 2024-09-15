@@ -7,7 +7,7 @@ export default function DefaultLayout({ children }: { children: React.ReactNode 
 
   return (
     <>
-      <AnimatedSVG />
+      {/* <AnimatedSVG /> */}
       <main className="mt-48 grow">{children}</main>
       <Footer />
     </>

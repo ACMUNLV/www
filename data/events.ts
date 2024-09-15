@@ -1,3 +1,7 @@
+/* 
+  Edit events within here
+*/
+
 export interface Event {
   title: string
   date: Date
@@ -20,17 +24,17 @@ export const Events: Event[] = [
   {
     title: 'Dynamic Programming',
     date: new Date('2024-09-18T00:00:00'), // September 18, 2024
-    startTime: new Date('2024-09-18T17:00:00'), //5:00 - 6:00pm PSt,
-    endTime: new Date('2024-09-18T18:00:00'), //5:00 - 6:00pm PSt,
+    startTime: new Date('2024-09-18T17:00:00'), // 5:00pm  PST
+    endTime: new Date('2024-09-18T18:00:00'),   // 6:00pm PST
     description: 'General Event',
     location: 'TBE-B 361',
     type: 'General',
   },
   {
     title: 'Graph Theory',
-    date: new Date('2024-09-25T00:00:00'), // September 18, 2024
-    startTime: new Date('2024-09-25T17:00:00'), //5:00 - 6:00pm PSt,
-    endTime: new Date('2024-09-25T18:00:00'), //5:00 - 6:00pm PSt,
+    date: new Date('2024-09-25T00:00:00'), // September 25, 2024
+    startTime: new Date('2024-09-25T17:00:00'), // 5:00pm  PST
+    endTime: new Date('2024-09-25T18:00:00'), // 6:00pm PST
     description: 'General Event',
     location: 'TBE-B 361',
     type: 'General',
