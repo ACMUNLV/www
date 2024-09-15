@@ -58,18 +58,10 @@ export default function AboutPage() {
 
       <section className="mx-auto my-16 flex max-w-[850px] flex-col items-center justify-between lg:flex-row-reverse">
         <div className="flex shrink-0 flex-col items-center justify-center gap-4">
-          <Image
-            src="/img/eh.jpg"
-            alt="UNLV Participation"
-            width={500}
-            height={500}
-            className="h-auto w-64 lg:w-96"
-          />
-          <Button size="lg">
-            <Link href="https://involvementcenter.unlv.edu/organization/unlv-acm" target="_blank">
-              Involvement Center
-            </Link>
-          </Button>
+          <Image src="/img/eh.jpg" alt="UNLV Participation" width={500} height={500} className="h-auto w-64 lg:w-96" />
+          <a href="https://involvementcenter.unlv.edu/organization/unlv-acm" target="_blank">
+            <Button size="lg">Involvement Center</Button>
+          </a>
         </div>
         <div className="space-y-4 text-center lg:text-left">
           <h1 className="text-4xl font-bold">How To Get Involved?</h1>

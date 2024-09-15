@@ -1,34 +1,24 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { Menu } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { socials } from '@/components/common/socials'
+import { usePathname } from 'next/navigation'
+import { socials } from '@/data/socials'
 import {
   NavigationMenu,
   NavigationMenuContent,
-  NavigationMenuIndicator,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
-  NavigationMenuViewport,
 } from '@/components/ui/navigation-menu'
 import { Button } from '@/components/ui/button'
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
-import { Menu } from 'lucide-react'
 
 export const Header = () => {
-  // const [top, setTop] = useState<boolean>(true)
-
-  // useEffect(() => {
-  //   const scrollHandler = () => {
-  //     window.scrollY > 15 ? setTop(false) : setTop(true)
-  //   }
-  //   window.addEventListener('scroll', scrollHandler)
-  //   return () => window.removeEventListener('scroll', scrollHandler)
-  // }, [top])
+   const pathname = usePathname()
 
   return (
     <header className="fixed top-0 z-30 w-full bg-background px-5 shadow-md transition duration-500 ease-in-out md:bg-opacity-90">
@@ -43,13 +33,20 @@ export const Header = () => {
         <NavigationMenu className="hidden lg:flex">
           <NavigationMenuList>
             {/* Pages */}
-            {socials.pageLinks.map((pageLink, index) => (
-              <NavigationMenuItem>
-                <NavigationMenuLink key={index} className={navigationMenuTriggerStyle()} href={pageLink.href}>
-                  {pageLink.name}
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-            ))}
+            {socials.pageLinks.map((pageLink, index) => {
+              const isActive = pathname === pageLink.href
+
+              return (
+                <NavigationMenuItem key={index}>
+                  <NavigationMenuLink
+                    className={`${navigationMenuTriggerStyle()} ${isActive ? 'text-primary' : ''}`}
+                    href={pageLink.href}
+                  >
+                    {pageLink.name}
+                  </NavigationMenuLink>
+                </NavigationMenuItem>
+              )
+            })}
             {/* Socials */}
             <NavigationMenuItem>
               <NavigationMenuTrigger>Socials</NavigationMenuTrigger>
@@ -102,7 +99,7 @@ export const Header = () => {
                   {pageLink.name}
                 </Link>
               ))}
-              <div >
+              <div>
                 <h3 className="mb-2 text-lg font-semibold">Socials</h3>
                 <div className="flex flex-wrap gap-2">
                   {socials.socialLinks.map((socialLink, index) => (

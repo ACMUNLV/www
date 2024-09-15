@@ -3,7 +3,7 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 import { AboutModal } from '@/components/whatwedo/modal'
-import { cn } from '@/libs/util'
+import { cn } from '@/lib/utils'
 
 type InfoCardProps = {
   image?: string

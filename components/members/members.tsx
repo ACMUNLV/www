@@ -1,16 +1,15 @@
 import Image from 'next/image'
 import { members } from '@/data/members'
-import { MembersWrapper } from '@/components/members/wrapper'
 import { Badge } from '@/components/ui/badge'
 
 export default function MemberList() {
   return (
-    <MembersWrapper>
+    <section className="mx-auto max-w-6xl px-4 py-12 md:py-20">
       {/* header */}
       <div className="mx-auto max-w-3xl pb-12 text-center md:pb-20" data-aos="fade-up" data-aos-delay="150">
         <h2 className="h2 mb-4">Meet our team!</h2>
 
-        <p className="text-body-color dark:text-slate-300 md:text-xl">
+        <p className="text-body-color md:text-xl">
           Our ACM club consists of dedicated and innovative students passionate about advancing computing as a science
           and a profession.
         </p>
@@ -34,25 +33,21 @@ export default function MemberList() {
                 alt="Profile picture"
                 width={80}
                 height={80}
-                className="mb-4 rounded-full border w-20 h-20 object-cover"
+                className="mb-4 h-20 w-20 rounded-full border object-cover"
                 unoptimized
               />
             </a>
 
             <span className="h4">
-              {person.name} {/* Name shown */}
+              {person.name}
             </span>
 
             <span className="ml-1 text-xs text-muted-foreground">
-              {person.pronouns} {/* If anyone interested */}
+              {person.pronouns} 
             </span>
 
             {person.title && (
-              <span
-                className={`mb-2 mt-1 text-center font-black ${
-                  person.title.startsWith('Board') ? 'text-yellow-500' : ''
-                } ${person.title == 'President' ? 'text-red-500 dark:text-red-300' : ''}`}
-              >
+              <span className={`mb-2 mt-1 text-center font-black ${person.title == 'President' ? 'text-primary' : ''}`}>
                 {person.title}
               </span>
             )}
@@ -63,7 +58,7 @@ export default function MemberList() {
 
             <span className="mb-2 flex flex-wrap items-center justify-center gap-1">
               {person.titles.map((role, index) => (
-                <Badge key={index} variant="outline" className='font-normal'>
+                <Badge key={index} variant="outline" className="font-normal">
                   {role}
                 </Badge>
               ))}
@@ -71,6 +66,6 @@ export default function MemberList() {
           </div>
         ))}
       </div>
-    </MembersWrapper>
+    </section>
   )
 }

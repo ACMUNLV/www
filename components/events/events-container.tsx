@@ -7,12 +7,16 @@ interface EventsContainerProps {
 
 export const EventsContainer = ({ selectedType }: EventsContainerProps) => {
   const filteredEvents = Events.filter((event) => selectedType === 'All' || event.type === selectedType)
+  const sortedEvents = filteredEvents.sort((a, b) => a.date.getTime() - b.date.getTime())
+
 
   return (
-    <div className="my-12 flex flex-wrap gap-4">
-      {filteredEvents.map((event, index) => (
-        <EventCard key={index} event={event} />
-      ))}
+    <div className="my-6 flex flex-wrap justify-center gap-4 lg:my-12">
+      {sortedEvents.length === 0 ? (
+        <p className="mt-10 text-4xl text-gray-400">No events available</p>
+      ) : (
+        sortedEvents.map((event, index) => <EventCard key={index} event={event} />)
+      )}
     </div>
   )
 }

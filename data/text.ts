@@ -7,7 +7,7 @@ export const texts = {
     title: 'About Us',
     description: `
     Founded in 1947, the Association for Computing Machinery (ACM) is the world’s 
-    largest scientific and education computing society. Our school chapter UNLV ACM 
+    largest scientific and education computing society. Our ACM chapter at UNLV
     works to connect student by hosting workshops, lectures, attending seminars, 
     and competing in regional coding competitions. We learn from professionals 
     in the industry, gain coding experience, and land internships! 

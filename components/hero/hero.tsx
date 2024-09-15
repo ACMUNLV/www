@@ -13,9 +13,9 @@ const Hero = () => {
           <p className="mx-auto max-w-[700px] text-gray-300 md:text-xl">{texts.hero.subtitle}</p>
         </div>
         <div className="space-x-4">
-          <Link href="https://involvementcenter.unlv.edu/organization/unlv-acm" target="_blank">
+          <a href="https://involvementcenter.unlv.edu/organization/unlv-acm" target="_blank">
             <Button variant="outline">Join ACM</Button>
-          </Link>
+          </a>
           <Link href="/about">
             <Button variant="outline">Learn More</Button>
           </Link>

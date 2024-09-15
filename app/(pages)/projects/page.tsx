@@ -1,19 +1,11 @@
-import Hero from '@/components/hero/hero'
-import WhatWedo from '@/components/whatwedo/whatwedo'
-import MemberList from '@/components/members/members'
+import { Metadata } from "next"
 
-export async function generateMetadata() {
-  return {
-    title: 'Projects',
-  }
+export const metadata: Metadata = {
+  title: 'Projects',
 }
-
 export default function ProjectsPage() {
   return (
     <>
-      <Hero />
-      <WhatWedo />
-      <MemberList />
     </>
   )
 }

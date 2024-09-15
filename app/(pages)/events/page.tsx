@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function EventsPage() {
 
   return (
-    <section className="mx-auto flex max-w-[850px] flex-col items-center justify-between">
+    <section className="mx-auto flex max-w-[900px] flex-col items-center justify-between">
       <EventsFilter />
     </section>
   )
