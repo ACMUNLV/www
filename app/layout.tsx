@@ -5,7 +5,6 @@ import type { Metadata } from 'next'
 import { siteMetadata, seoKeywords } from '@/data/seo-meta'
 import { ScrollToTop } from '@/components/common/scroll-to-top'
 import { Header } from '@/components/layout/header'
-import AnimatedSVG from '@/components/animated-svg'
 
 export const metadata: Metadata = {
   keywords: seoKeywords,

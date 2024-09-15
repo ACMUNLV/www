@@ -1,20 +1,13 @@
-import Hero from '@/components/hero/hero'
-import WhatWedo from '@/components/whatwedo/whatwedo'
-import MemberList from '@/components/members/members'
+import { Metadata } from "next"
 
-export async function generateMetadata() {
-  return {
-    title: 'ICPC',
-  }
+export const metadata: Metadata = {
+  title: 'ICPC',
 }
-
 
 export default function ICPCPage() {
   return (
-    <>
-      <Hero />
-      <WhatWedo />
-      <MemberList />
-    </>
+    <div className="p-4 mt-96">
+      <h1>ICPC</h1>
+    </div>
   )
 }

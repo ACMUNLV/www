@@ -1,12 +1,10 @@
+import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 
-
-export async function generateMetadata() {
-  return {
-    title: 'About',
-  }
+export const metadata: Metadata = {
+  title: 'About',
 }
 
 export default function AboutPage() {
