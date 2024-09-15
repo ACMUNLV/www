@@ -10,7 +10,7 @@ export const seoKeywords = [
 ]
 
 export const siteMetadata = {
-  title: 'unlv-acm',
+  title: 'ACM UNLV',
   icon: '/favicon.ico',
   description: "We're a fully student team focused on XXX",
 }

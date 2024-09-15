@@ -1,44 +1,34 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./app/**/*.{js,ts,jsx,tsx}', './pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
-  darkMode: 'class',
+  darkMode: ['class', 'class'],
   theme: {
     container: {
-      center: true,
+      center: 'true',
       padding: '2rem',
       screens: {
         '2xl': '1400px',
       },
     },
-
     screens: {
       'xs': '450px',
-      // => @media (min-width: 450px) { ... }
-
       'sm': '575px',
-      // => @media (min-width: 576px) { ... }
-
       'md': '768px',
-      // => @media (min-width: 768px) { ... }
-
       'lg': '992px',
-      // => @media (min-width: 992px) { ... }
-
       'xl': '1200px',
-      // => @media (min-width: 1200px) { ... }
-
       '2xl': '1400px',
-      // => @media (min-width: 1400px) { ... }
     },
     extend: {
       colors: {
-        /* Template stuff */
         'current': 'currentColor',
         'transparent': 'transparent',
         'white': '#FFFFFF',
         'black': '#121723',
         'dark': '#1D2430',
-        'primary': '#4A6CF7',
+        'primary': {
+          DEFAULT: 'hsl(var(--primary))',
+          foreground: 'hsl(var(--primary-foreground))',
+        },
         'yellow': '#FBB040',
         'body-color': '#788293',
         'body-color-dark': '#959CB1',
@@ -47,7 +37,6 @@ module.exports = {
         'stroke': '#E3E8EF',
         'stroke-dark': '#353943',
         'bg-color-dark': '#171C28',
-
         'fontSize': {
           'xs': '0.75rem',
           'sm': '0.875rem',
@@ -84,17 +73,72 @@ module.exports = {
         },
         'keyframes': {
           'accordion-down': {
-            from: { height: 0 },
-            to: { height: 'var(--radix-accordion-content-height)' },
+            from: {
+              height: '0',
+            },
+            to: {
+              height: 'var(--radix-accordion-content-height)',
+            },
           },
           'accordion-up': {
-            from: { height: 'var(--radix-accordion-content-height)' },
-            to: { height: 0 },
+            from: {
+              height: 'var(--radix-accordion-content-height)',
+            },
+            to: {
+              height: '0',
+            },
+          },
+          'svg-stroke': {
+            to: {
+              strokeDashoffset: '0',
+            },
+          },
+          'pulse': {
+            '0%, 100%': { boxShadow: '0 0 0 0 var(--pulse-color)' },
+            '50%': { boxShadow: '0 0 0 8px var(--pulse-color)' },
           },
         },
         'animation': {
+          'svg-stroke': 'svg-stroke 1s ease-in',
           'accordion-down': 'accordion-down 0.2s ease-out',
           'accordion-up': 'accordion-up 0.2s ease-out',
+          'pulse': 'pulse var(--duration) ease-out infinite',
+        },
+        'background': 'hsl(var(--background))',
+        'foreground': 'hsl(var(--foreground))',
+        'card': {
+          DEFAULT: 'hsl(var(--card))',
+          foreground: 'hsl(var(--card-foreground))',
+        },
+        'popover': {
+          DEFAULT: 'hsl(var(--popover))',
+          foreground: 'hsl(var(--popover-foreground))',
+        },
+        'secondary': {
+          DEFAULT: 'hsl(var(--secondary))',
+          foreground: 'hsl(var(--secondary-foreground))',
+        },
+        'muted': {
+          DEFAULT: 'hsl(var(--muted))',
+          foreground: 'hsl(var(--muted-foreground))',
+        },
+        'accent': {
+          DEFAULT: 'hsl(var(--accent))',
+          foreground: 'hsl(var(--accent-foreground))',
+        },
+        'destructive': {
+          DEFAULT: 'hsl(var(--destructive))',
+          foreground: 'hsl(var(--destructive-foreground))',
+        },
+        'border': 'hsl(var(--border))',
+        'input': 'hsl(var(--input))',
+        'ring': 'hsl(var(--ring))',
+        'chart': {
+          1: 'hsl(var(--chart-1))',
+          2: 'hsl(var(--chart-2))',
+          3: 'hsl(var(--chart-3))',
+          4: 'hsl(var(--chart-4))',
+          5: 'hsl(var(--chart-5))',
         },
       },
       rotate: {
@@ -117,6 +161,11 @@ module.exports = {
       },
       dropShadow: {
         three: '0px 5px 15px rgba(6, 8, 15, 0.05)',
+      },
+      borderRadius: {
+        lg: 'var(--radius)',
+        md: 'calc(var(--radius) - 2px)',
+        sm: 'calc(var(--radius) - 4px)',
       },
     },
   },

@@ -102,7 +102,7 @@ export default function NotFound() {
                     </defs>
                   </svg>
                 </div>
-                <h3 className="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl">
+                <h3 className="mb-4 text-3xl font-bold text-black sm:text-4xl">
                   Sorry, the page can’t be found
                 </h3>
                 <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
