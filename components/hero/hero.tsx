@@ -10,7 +10,7 @@ const Hero = () => {
           <h1 className="text-3xl font-bold tracking-tighter text-white sm:text-4xl md:text-5xl lg:text-6xl/none">
             {texts.hero.title}
           </h1>
-          <p className="mx-auto max-w-[700px] text-gray-300 md:text-xl">{texts.hero.subtitle}</p>
+          <p className="mx-auto max-w-[700px] text-neutral-300 md:text-xl">{texts.hero.subtitle}</p>
         </div>
         <div className="space-x-4">
           <a href="https://involvementcenter.unlv.edu/organization/unlv-acm" target="_blank">

@@ -75,7 +75,7 @@ export default function Footer() {
               <li className={index !== 0 ? 'ml-4' : ''} key={index}>
                 <Link
                   href={socialLink.href}
-                  className="hover:bg-tertiary flex items-center justify-center rounded-full p-2 text-lg text-gray-400 transition duration-150 ease-in-out hover:text-primary"
+                  className="hover:bg-tertiary flex items-center justify-center rounded-full p-2 text-lg text-neutral-400 transition duration-150 ease-in-out hover:text-primary"
                   aria-label={socialLink.alt}
                   target="_blank"
                   rel="noopener noreferrer"

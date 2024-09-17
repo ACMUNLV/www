@@ -18,7 +18,7 @@ import { Button } from '@/components/ui/button'
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 
 export const Header = () => {
-   const pathname = usePathname()
+  const pathname = usePathname()
 
   return (
     <header className="fixed top-0 z-30 w-full bg-background px-5 shadow-md transition duration-500 ease-in-out md:bg-opacity-90">
@@ -57,7 +57,7 @@ export const Header = () => {
                       <span className={index !== 0 ? 'ml-4' : ''} key={index}>
                         <Link
                           href={socialLink.href}
-                          className="flex items-center justify-center rounded-full p-2 text-gray-400 transition hover:text-primary"
+                          className="flex items-center justify-center rounded-full p-2 text-neutral-400 transition hover:text-primary"
                           aria-label={socialLink.alt}
                         >
                           <span className="mx-2 text-lg">{socialLink.alt}</span>

@@ -23,7 +23,8 @@ export const texts = {
     },
     'why-join': {
       title: 'Why Join?',
-      description: `
+      // could make sections similar to the sections in projects.ts
+      description: ` 
         Competitive Programing fasdfasdfasdfasdf  -daniel
         Open Source Projects asasdffasdfasdf  -daniel
         Professional Development

@@ -2,6 +2,8 @@ import Image from 'next/image'
 import { notFound } from 'next/navigation'
 import { Projects } from '@/data/projects'
 import { Metadata } from 'next'
+import { MoveLeft } from 'lucide-react'
+import Link from 'next/link'
 
 interface ProjectPageProps {
   params: {
@@ -26,7 +28,7 @@ export function generateMetadata({ params }: ProjectPageProps): Metadata {
 
   return {
     title: project.title,
-    description: project.description,
+    description: project.subtitle,
   }
 }
 
@@ -37,12 +39,23 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
   if (!project) notFound()
 
   return (
-    <section className="mx-auto flex max-w-[900px] flex-col items-center justify-center gap-6">
-      <h1 className="text-2xl lg:text-6xl">{project.title}</h1>
-      <p>{project.description}</p>
-      <Image src={project.src} alt={project.alt} className="my-4" height={1000} width={1000} />
-      <div className="text-gray-500">
-        type: {project.type} id: {project.id} alt: {project.alt}{' '}
+    <section className="mx-4 md:mx-auto flex max-w-[900px] flex-col items-center justify-center">
+      <Link href="/projects" className="flex gap-2 self-start mb-4">
+        <MoveLeft className="h-5 w-5" />
+        <span>Back to projects</span>
+      </Link>
+      <div className="gap-1 flex flex-col items-center justify-center">
+        <h1 className="text-4xl font-bold lg:text-6xl">{project.title}</h1>
+        <p className="max-w-xl text-neutral-500">{project.subtitle}</p>
+      </div>
+      <Image src={project.src} alt={project.alt} className="my-4 rounded-xl" height={1000} width={1000} />
+      <div className="mb-16">
+        {project.sections.map((section) => (
+          <div className="flex flex-col items-center justify-center gap-2 my-4">
+            <h1 className="text-3xl font-semibold">{section.header}</h1>
+            <p className="text-sm md:text-lg text-neutral-700">{section.paragraph}</p>
+          </div>
+        ))}
       </div>
     </section>
   )
