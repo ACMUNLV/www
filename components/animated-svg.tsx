@@ -9,480 +9,817 @@ export default function AnimatedSVG() {
     // Trigger the animation after the component mounts
     setIsVisible(true)
   }, [])
-  
+
   return (
-    <div className="bg-transparent relative top-20 w-full">
+    <div className="relative top-20 w-full overflow-hidden">
       <svg width="1920" height="80" viewBox="0 0 1920 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g clip-path="url(#clip0_5_7)">
-          <circle cx="569" cy="53" r="8" fill="#B10202" />
-          <path
-            d="M721 14C721 18.4183 717.418 22 713 22C708.582 22 705 18.4183 705 14C705 9.58172 708.582 6 713 6C717.418 6 721 9.58172 721 14Z"
-            fill="#B10202"
-          />
-          <path
-            d="M573 53H592.367H603L641.5 14.5H710"
-            stroke="#B10202"
-            stroke-width="8"
-            strokeDasharray="300"
-            strokeDashoffset={isVisible ? '0' : '300'}
-            style={{
-              transition: 'stroke-dashoffset 0.5s ease-in-out 0.0s',
-            }}
-          />
-          <circle cx="467" cy="10" r="8" fill="#B10202" />
-          <circle cx="617" cy="10" r="8" fill="#B10202" />
-          <path
-            d="M467 10H509H544.5L566.5 32H596.5L615 13.5"
-            stroke="#B10202"
-            stroke-width="8"
-            strokeDasharray="300"
-            strokeDashoffset={isVisible ? '0' : '300'}
-            style={{
-              transition: 'stroke-dashoffset 0.5s ease-in-out 0.0s',
-            }}
-          />
-          <path
-            d="M425 28C425 32.4183 421.418 36 417 36C412.582 36 409 32.4183 409 28C409 23.5817 412.582 20 417 20C421.418 20 425 23.5817 425 28Z"
-            fill="#B10202"
-          />
-          <path
-            d="M417.433 28.4208L424.516 35.5041L428.405 39.393L432.294 43.2819L457.433 68.4208H581.5"
-            stroke="#B10202"
-            stroke-width="8"
-            strokeDasharray="300"
-            strokeDashoffset={isVisible ? '0' : '300'}
-            style={{
-              transition: 'stroke-dashoffset 0.5s ease-in-out 0.0s',
-            }}
-          />
-          <circle cx="587" cy="68" r="8" fill="#B10202" />
-          <circle cx="397" cy="9" r="8" fill="#B10202" />
-          <path
-            d="M563 39C563 43.4183 559.418 47 555 47C550.582 47 547 43.4183 547 39C547 34.5817 550.582 31 555 31C559.418 31 563 34.5817 563 39Z"
-            fill="#B10202"
-          />
-          <path
-            d="M404 9H432.096L462 38.9042H536.5H550.5"
-            stroke="#B10202"
-            stroke-width="8"
-            strokeDasharray="300"
-            strokeDashoffset={isVisible ? '0' : '300'}
-            style={{
-              transition: 'stroke-dashoffset 0.5s ease-in-out 0.0s',
-            }}
-          />
-          <path
-            d="M375 9C375 13.4183 371.418 17 367 17C362.582 17 359 13.4183 359 9C359 4.58172 362.582 1 367 1C371.418 1 375 4.58172 375 9Z"
-            fill="#B10202"
-          />
-          <circle cx="429" cy="71" r="8" fill="#B10202" />
-          <path
-            d="M367.433 9.42078L378.412 20.3999L384.44 26.4277L390.468 32.4555L429.433 71.4208"
-            stroke="#B10202"
-            stroke-width="8"
-            strokeDasharray="300"
-            strokeDashoffset={isVisible ? '0' : '300'}
-            style={{
-              transition: 'stroke-dashoffset 0.5s ease-in-out 0.0s',
-            }}
-          />
-          <circle cx="277" cy="68" r="8" fill="#B10202" />
-          <circle cx="401" cy="68" r="8" fill="#B10202" />
-          <path
-            d="M282 68H289.5L310 47.5H353.5L374 68H398"
-            stroke="#B10202"
-            stroke-width="8"
-            strokeDasharray="300"
-            strokeDashoffset={isVisible ? '0' : '300'}
-            style={{
-              transition: 'stroke-dashoffset 0.5s ease-in-out 0.0s',
-            }}
-          />
-          <circle cx="166" cy="52" r="8" fill="#B10202" />
-          <path
-            d="M336 28C336 32.4183 332.418 36 328 36C323.582 36 320 32.4183 320 28C320 23.5817 323.582 20 328 20C332.418 20 336 23.5817 336 28Z"
-            fill="#B10202"
-          />
-          <path
-            d="M170 52H221H249L273 28H323.5"
-            stroke="#B10202"
-            stroke-width="8"
-            strokeDasharray="300"
-            strokeDashoffset={isVisible ? '0' : '300'}
-            style={{
-              transition: 'stroke-dashoffset 0.5s ease-in-out 0.0s',
-            }}
-          />
-          <circle cx="16" cy="63" r="8" fill="#B10202" />
-          <path
-            d="M93.5 63C93.5 67.4183 89.9183 71 85.5 71C81.0817 71 77.5 67.4183 77.5 63C77.5 58.5817 81.0817 55 85.5 55C89.9183 55 93.5 58.5817 93.5 63Z"
-            fill="#B10202"
-          />
-          <path
-            d="M20 63H31.1562H37.2812H43.4062H83"
-            stroke="#B10202"
-            stroke-width="8"
-            strokeDasharray="300"
-            strokeDashoffset={isVisible ? '0' : '300'}
-            style={{
-              transition: 'stroke-dashoffset 0.5s ease-in-out 0.0s',
-            }}
-          />
-          <circle cx="8" cy="42" r="8" fill="#B10202" />
-          <circle cx="255" cy="68" r="8" fill="#B10202" />
-          <path
-            d="M11 42H62H90L116 68H251"
-            stroke="#B10202"
-            stroke-width="8"
-            strokeDasharray="300"
-            strokeDashoffset={isVisible ? '0' : '300'}
-            style={{
-              transition: 'stroke-dashoffset 0.5s ease-in-out 0.0s',
-            }}
-          />
-          <circle cx="53" cy="28" r="8" fill="#B10202" />
-          <path
-            d="M235 28C235 32.4183 231.418 36 227 36C222.582 36 219 32.4183 219 28C219 23.5817 222.582 20 227 20C231.418 20 235 23.5817 235 28Z"
-            fill="#B10202"
-          />
-          <path
-            d="M57 28H61.6042H64.1319H66.6597H83"
-            stroke="#B10202"
-            stroke-width="8"
-            strokeDasharray="300"
-            strokeDashoffset={isVisible ? '0' : '300'}
-            style={{
-              transition: 'stroke-dashoffset 0.5s ease-in-out 0.0s',
-            }}
-          />
-          <path
-            d="M83 28H91H94L120 54H142L168 28H211.5H221"
-            stroke="#B10202"
-            stroke-width="8"
-            strokeDasharray="300"
-            strokeDashoffset={isVisible ? '0' : '300'}
-            style={{
-              transition: 'stroke-dashoffset 0.5s ease-in-out 0.0s',
-            }}
-          />
-          <circle cx="8" cy="12" r="8" fill="#B10202" />
-          <circle cx="305" cy="12" r="8" fill="#B10202" />
-          <path
-            d="M12 12H63H91H119H300"
-            stroke="#B10202"
-            stroke-width="8"
-            strokeDasharray="300"
-            strokeDashoffset={isVisible ? '0' : '300'}
-            style={{
-              transition: 'stroke-dashoffset 0.5s ease-in-out 0.0s',
-            }}
-          />
-          <path
-            d="M1771 31.6128C1771 36.0311 1767.42 39.6128 1763 39.6128C1758.58 39.6128 1755 36.0311 1755 31.6128C1755 27.1945 1758.58 23.6128 1763 23.6128C1767.42 23.6128 1771 27.1945 1771 31.6128Z"
-            fill="#B10202"
-          />
-          <path
-            d="M1763.43 32.0336L1770.52 39.1169L1774.41 43.0058L1778.29 46.8947L1803.43 72.0336L1903.5 72.0336"
-            stroke="#B10202"
-            stroke-width="8"
-            strokeDasharray="300"
-            strokeDashoffset={isVisible ? '0' : '300'}
-            style={{
-              transition: 'stroke-dashoffset 0.5s ease-in-out 0.0s',
-            }}
-          />
-          <circle cx="1743" cy="12.6128" r="8" fill="#B10202" />
-          <path
-            d="M1909 42.6128C1909 47.0311 1905.42 50.6128 1901 50.6128C1896.58 50.6128 1893 47.0311 1893 42.6128C1893 38.1945 1896.58 34.6128 1901 34.6128C1905.42 34.6128 1909 38.1945 1909 42.6128Z"
-            fill="#B10202"
-          />
-          <path
-            d="M1750 12.6128H1778.1L1808 42.517H1882.5H1896.5"
-            stroke="#B10202"
-            stroke-width="8"
-            strokeDasharray="300"
-            strokeDashoffset={isVisible ? '0' : '300'}
-            style={{
-              transition: 'stroke-dashoffset 0.5s ease-in-out 0.0s',
-            }}
-          />
-          <path
-            d="M1721 12.6128C1721 17.0311 1717.42 20.6128 1713 20.6128C1708.58 20.6128 1705 17.0311 1705 12.6128C1705 8.19451 1708.58 4.61279 1713 4.61279C1717.42 4.61279 1721 8.19451 1721 12.6128Z"
-            fill="#B10202"
-          />
-          <circle cx="1775" cy="74.6128" r="8" fill="#B10202" />
-          <path
-            d="M1713.43 13.0336L1724.41 24.0127L1730.44 30.0405L1736.47 36.0683L1775.43 75.0336"
-            stroke="#B10202"
-            stroke-width="8"
-            strokeDasharray="300"
-            strokeDashoffset={isVisible ? '0' : '300'}
-            style={{
-              transition: 'stroke-dashoffset 0.5s ease-in-out 0.0s',
-            }}
-          />
-          <circle cx="1623" cy="71.6128" r="8" fill="#B10202" />
-          <circle cx="1747" cy="71.6128" r="8" fill="#B10202" />
-          <path
-            d="M1628 71.6128H1635.5L1656 51.1128H1699.5L1720 71.6128H1744"
-            stroke="#B10202"
-            stroke-width="8"
-            strokeDasharray="300"
-            strokeDashoffset={isVisible ? '0' : '300'}
-            style={{
-              transition: 'stroke-dashoffset 0.5s ease-in-out 0.0s',
-            }}
-          />
-          <circle cx="1512" cy="55.6128" r="8" fill="#B10202" />
-          <path
-            d="M1682 31.6128C1682 36.0311 1678.42 39.6128 1674 39.6128C1669.58 39.6128 1666 36.0311 1666 31.6128C1666 27.1945 1669.58 23.6128 1674 23.6128C1678.42 23.6128 1682 27.1945 1682 31.6128Z"
-            fill="#B10202"
-          />
-          <path
-            d="M1516 55.6128H1567H1595L1619 31.6128H1669.5"
-            stroke="#B10202"
-            stroke-width="8"
-            strokeDasharray="300"
-            strokeDashoffset={isVisible ? '0' : '300'}
-            style={{
-              transition: 'stroke-dashoffset 0.5s ease-in-out 0.0s',
-            }}
-          />
-          <circle cx="1362" cy="66.6128" r="8" fill="#B10202" />
-          <path
-            d="M1439.5 66.6128C1439.5 71.0311 1435.92 74.6128 1431.5 74.6128C1427.08 74.6128 1423.5 71.0311 1423.5 66.6128C1423.5 62.1945 1427.08 58.6128 1431.5 58.6128C1435.92 58.6128 1439.5 62.1945 1439.5 66.6128Z"
-            fill="#B10202"
-          />
-          <path
-            d="M1366 66.6128H1377.16H1383.28H1389.41H1429"
-            stroke="#B10202"
-            stroke-width="8"
-            strokeDasharray="300"
-            strokeDashoffset={isVisible ? '0' : '300'}
-            style={{
-              transition: 'stroke-dashoffset 0.5s ease-in-out 0.0s',
-            }}
-          />
-          <circle cx="1354" cy="45.6128" r="8" fill="#B10202" />
-          <circle cx="1601" cy="71.6128" r="8" fill="#B10202" />
-          <path
-            d="M1357 45.6128H1408H1436L1462 71.6128H1597"
-            stroke="#B10202"
-            stroke-width="8"
-            strokeDasharray="300"
-            strokeDashoffset={isVisible ? '0' : '300'}
-            style={{
-              transition: 'stroke-dashoffset 0.5s ease-in-out 0.0s',
-            }}
-          />
-          <circle cx="1399" cy="31.6128" r="8" fill="#B10202" />
-          <path
-            d="M1581 31.6128C1581 36.0311 1577.42 39.6128 1573 39.6128C1568.58 39.6128 1565 36.0311 1565 31.6128C1565 27.1945 1568.58 23.6128 1573 23.6128C1577.42 23.6128 1581 27.1945 1581 31.6128Z"
-            fill="#B10202"
-          />
-          <path
-            d="M1403 31.6128H1407.6H1410.13H1412.66H1429"
-            stroke="#B10202"
-            stroke-width="8"
-            strokeDasharray="300"
-            strokeDashoffset={isVisible ? '0' : '300'}
-            style={{
-              transition: 'stroke-dashoffset 0.5s ease-in-out 0.0s',
-            }}
-          />
-          <path
-            d="M1429 31.6128H1437H1440L1466 57.6128H1488L1514 31.6128H1557.5H1567"
-            stroke="#B10202"
-            stroke-width="8"
-            strokeDasharray="300"
-            strokeDashoffset={isVisible ? '0' : '300'}
-            style={{
-              transition: 'stroke-dashoffset 0.5s ease-in-out 0.0s',
-            }}
-          />
-          <circle cx="1354" cy="15.6128" r="8" fill="#B10202" />
-          <circle cx="1651" cy="15.6128" r="8" fill="#B10202" />
-          <path
-            d="M1358 15.6128H1409H1437H1465H1646"
-            stroke="#B10202"
-            stroke-width="8"
-            strokeDasharray="300"
-            strokeDashoffset={isVisible ? '0' : '300'}
-            style={{
-              transition: 'stroke-dashoffset 0.5s ease-in-out 0.0s',
-            }}
-          />
-          <circle cx="1909" cy="71.6128" r="8" fill="#B10202" />
-          <ellipse cx="767" cy="26.4557" rx="8" ry="8.00014" transform="rotate(180 767 26.4557)" fill="#B10202" />
-          <path
-            d="M615 65.4564C615 61.038 618.582 57.4562 623 57.4562C627.418 57.4562 631 61.038 631 65.4564C631 69.8747 627.418 73.4565 623 73.4565C618.582 73.4565 615 69.8747 615 65.4564Z"
-            fill="#B10202"
-          />
-          <path
-            d="M763 26.4557H743.633H733L694.5 64.9564H626"
-            stroke="#B10202"
-            stroke-width="8"
-            strokeDasharray="300"
-            strokeDashoffset={isVisible ? '0' : '300'}
-            style={{
-              transition: 'stroke-dashoffset 0.5s ease-in-out 0.0s',
-            }}
-          />
-          <ellipse cx="869" cy="69.4564" rx="8" ry="8.00014" transform="rotate(180 869 69.4564)" fill="#B10202" />
-          <ellipse cx="719" cy="69.4564" rx="8" ry="8.00014" transform="rotate(180 719 69.4564)" fill="#B10202" />
-          <path
-            d="M869 69.4565H827H791.5L769.5 47.4561H739.5L721 65.9564"
-            stroke="#B10202"
-            stroke-width="8"
-            strokeDasharray="300"
-            strokeDashoffset={isVisible ? '0' : '300'}
-            style={{
-              transition: 'stroke-dashoffset 0.5s ease-in-out 0.0s',
-            }}
-          />
-          <path
-            d="M911 51.4561C911 47.0378 914.582 43.456 919 43.456C923.418 43.456 927 47.0378 927 51.4561C927 55.8745 923.418 59.4563 919 59.4563C914.582 59.4563 911 55.8745 911 51.4561Z"
-            fill="#B10202"
-          />
-          <path
-            d="M918.567 51.0353L911.484 43.9519L907.595 40.0629L903.706 36.174L878.567 11.0347L754.5 11.0347"
-            stroke="#B10202"
-            stroke-width="8"
-            strokeDasharray="300"
-            strokeDashoffset={isVisible ? '0' : '300'}
-            style={{
-              transition: 'stroke-dashoffset 0.5s ease-in-out 0.0s',
-            }}
-          />
-          <ellipse cx="749" cy="11.4554" rx="8" ry="8.00014" transform="rotate(180 749 11.4554)" fill="#B10202" />
-          <ellipse cx="939" cy="70.4565" rx="8" ry="8.00014" transform="rotate(180 939 70.4565)" fill="#B10202" />
-          <path
-            d="M773 40.4559C773 36.0376 776.582 32.4558 781 32.4558C785.418 32.4558 789 36.0376 789 40.4559C789 44.8743 785.418 48.4561 781 48.4561C776.582 48.4561 773 44.8743 773 40.4559Z"
-            fill="#B10202"
-          />
-          <path
-            d="M932 70.4565H903.904L874 40.5518H799.5H785.5"
-            stroke="#B10202"
-            stroke-width="8"
-            strokeDasharray="300"
-            strokeDashoffset={isVisible ? '0' : '300'}
-            style={{
-              transition: 'stroke-dashoffset 0.5s ease-in-out 0.0s',
-            }}
-          />
-          <path
-            d="M961 70.4565C961 66.0381 964.582 62.4563 969 62.4563C973.418 62.4563 977 66.0381 977 70.4565C977 74.8748 973.418 78.4566 969 78.4566C964.582 78.4566 961 74.8748 961 70.4565Z"
-            fill="#B10202"
-          />
-          <ellipse cx="907" cy="8.4554" rx="8" ry="8.00014" transform="rotate(180 907 8.4554)" fill="#B10202" />
-          <path
-            d="M968.567 70.0357L957.588 59.0563L951.56 53.0284L945.532 47.0006L906.567 8.03461"
-            stroke="#B10202"
-            stroke-width="8"
-            strokeDasharray="300"
-            strokeDashoffset={isVisible ? '0' : '300'}
-            style={{
-              transition: 'stroke-dashoffset 0.5s ease-in-out 0.0s',
-            }}
-          />
-          <ellipse cx="1059" cy="11.4554" rx="8" ry="8.00014" transform="rotate(180 1059 11.4554)" fill="#B10202" />
-          <ellipse cx="935" cy="11.4554" rx="8" ry="8.00014" transform="rotate(180 935 11.4554)" fill="#B10202" />
-          <path
-            d="M1054 11.4555H1046.5L1026 31.9558H982.5L962 11.4555H938"
-            stroke="#B10202"
-            stroke-width="8"
-            strokeDasharray="300"
-            strokeDashoffset={isVisible ? '0' : '300'}
-            style={{
-              transition: 'stroke-dashoffset 0.5s ease-in-out 0.0s',
-            }}
-          />
-          <ellipse cx="1170" cy="27.4557" rx="8" ry="8.00014" transform="rotate(180 1170 27.4557)" fill="#B10202" />
-          <path
-            d="M1000 51.4561C1000 47.0378 1003.58 43.456 1008 43.456C1012.42 43.456 1016 47.0378 1016 51.4561C1016 55.8745 1012.42 59.4563 1008 59.4563C1003.58 59.4563 1000 55.8745 1000 51.4561Z"
-            fill="#B10202"
-          />
-          <path
-            d="M1166 27.4557H1115H1087L1063 51.4561H1012.5"
-            stroke="#B10202"
-            stroke-width="8"
-            strokeDasharray="300"
-            strokeDashoffset={isVisible ? '0' : '300'}
-            style={{
-              transition: 'stroke-dashoffset 0.5s ease-in-out 0.0s',
-            }}
-          />
-          <ellipse cx="1320" cy="16.4555" rx="8" ry="8.00014" transform="rotate(180 1320 16.4555)" fill="#B10202" />
-          <path
-            d="M1242.5 16.4555C1242.5 12.0372 1246.08 8.45539 1250.5 8.45539C1254.92 8.45539 1258.5 12.0372 1258.5 16.4555C1258.5 20.8739 1254.92 24.4557 1250.5 24.4557C1246.08 24.4557 1242.5 20.8739 1242.5 16.4555Z"
-            fill="#B10202"
-          />
-          <path
-            d="M1316 16.4556H1304.84H1298.72H1292.59H1253"
-            stroke="#B10202"
-            stroke-width="8"
-            strokeDasharray="300"
-            strokeDashoffset={isVisible ? '0' : '300'}
-            style={{
-              transition: 'stroke-dashoffset 0.5s ease-in-out 0.0s',
-            }}
-          />
-          <ellipse cx="1328" cy="37.4559" rx="8" ry="8.00014" transform="rotate(180 1328 37.4559)" fill="#B10202" />
-          <ellipse cx="1081" cy="11.4554" rx="8" ry="8.00014" transform="rotate(180 1081 11.4554)" fill="#B10202" />
-          <path
-            d="M1325 37.4559H1274H1246L1220 11.4554H1085"
-            stroke="#B10202"
-            stroke-width="8"
-            strokeDasharray="300"
-            strokeDashoffset={isVisible ? '0' : '300'}
-            style={{
-              transition: 'stroke-dashoffset 0.5s ease-in-out 0.0s',
-            }}
-          />
-          <ellipse cx="1283" cy="51.4561" rx="8" ry="8.00014" transform="rotate(180 1283 51.4561)" fill="#B10202" />
-          <path
-            d="M1101 51.4561C1101 47.0378 1104.58 43.456 1109 43.456C1113.42 43.456 1117 47.0378 1117 51.4561C1117 55.8745 1113.42 59.4563 1109 59.4563C1104.58 59.4563 1101 55.8745 1101 51.4561Z"
-            fill="#B10202"
-          />
-          <path
-            d="M1279 51.4561H1274.4H1271.87H1269.34H1253"
-            stroke="#B10202"
-            stroke-width="8"
-            strokeDasharray="300"
-            strokeDashoffset={isVisible ? '0' : '300'}
-            style={{
-              transition: 'stroke-dashoffset 0.5s ease-in-out 0.0s',
-            }}
-          />
-          <path
-            d="M1253 51.4561H1245H1242L1216 25.4557H1194L1168 51.4561H1124.5H1115"
-            stroke="#B10202"
-            stroke-width="8"
-            strokeDasharray="300"
-            strokeDashoffset={isVisible ? '0' : '300'}
-            style={{
-              transition: 'stroke-dashoffset 0.5s ease-in-out 0.0s',
-            }}
-          />
-          <ellipse cx="1328" cy="67.4564" rx="8" ry="8.00014" transform="rotate(180 1328 67.4564)" fill="#B10202" />
-          <ellipse cx="1031" cy="67.4564" rx="8" ry="8.00014" transform="rotate(180 1031 67.4564)" fill="#B10202" />
-          <path
-            d="M1324 67.4564H1273H1245H1217H1036"
-            stroke="#B10202"
-            stroke-width="8"
-            strokeDasharray="300"
-            strokeDashoffset={isVisible ? '0' : '300'}
-            style={{
-              transition: 'stroke-dashoffset 0.5s ease-in-out 0.0s',
-            }}
-          />
-        </g>
-        <defs>
-          <clipPath id="clip0_5_7">
-            <rect width="1920" height="80" fill="white" />
-          </clipPath>
-        </defs>
+        <rect width="1920" height="80" fill="white" />
+        <circle cx="6" cy="6" r="3.5" fill="#B10202" stroke="#B10202" />
+        <circle cx="191" cy="6" r="3.5" fill="#B10202" stroke="#B10202" />
+        <path
+          d="M6 6H62L70.5 14.5H157.5L165 7H191.5"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.0s infinite' }}
+        />
+        <circle cx="51" cy="25" r="4" fill="#B10202" />
+        <circle cx="6" cy="25" r="4" fill="#B10202" />
+        <path
+          d="M6 25H47.5"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.0s infinite' }}
+        />
+        <circle cx="51" cy="25" r="4" fill="#B10202" />
+        <circle cx="6" cy="25" r="4" fill="#B10202" />
+        <path
+          d="M6 25H47.5"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.0s infinite' }}
+        />
+        <circle cx="101" cy="35" r="4" fill="#B10202" />
+        <circle cx="6" cy="35" r="4" fill="#B10202" />
+        <path
+          d="M6 35H101"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.0s infinite' }}
+        />
+        <circle cx="6" cy="53" r="4" fill="#B10202" />
+        <circle cx="194" cy="70" r="4" fill="#B10202" />
+        <path
+          d="M6 53H33L42 44H100.5L127 70.5H166H194.5"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.0s infinite' }}
+        />
+        <circle cx="8" cy="15" r="4" fill="#B10202" />
+        <circle cx="148" cy="38" r="4" fill="#B10202" />
+        <path
+          d="M8 15H55L66.5 26.5H105L117 38.5H148"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.0s infinite' }}
+        />
+        <path
+          d="M32 65C32 67.2091 30.2091 69 28 69C25.7909 69 24 67.2091 24 65C24 62.7909 25.7909 61 28 61C30.2091 61 32 62.7909 32 65Z"
+          fill="#B10202"
+        />
+        <circle cx="8" cy="65" r="4" fill="#B10202" />
+        <path
+          d="M8 65H28"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.0s infinite' }}
+        />
+        <circle cx="32" cy="74" r="4" fill="#B10202" />
+        <circle cx="53" cy="53" r="4" fill="#B10202" />
+        <path
+          d="M32 74L53 53"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.0s infinite' }}
+        />
+        <circle cx="45" cy="74" r="4" fill="#B10202" />
+        <circle cx="116" cy="74" r="4" fill="#B10202" />
+        <path
+          d="M45 74L66 53H95.5L116.5 74"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.0s infinite' }}
+        />
+        <circle cx="103" cy="74" r="4" fill="#B10202" />
+        <circle cx="58" cy="74" r="4" fill="#B10202" />
+        <path
+          d="M58 74H99.5"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.0s infinite' }}
+        />
+        <circle cx="150" cy="6" r="4" fill="#B10202" />
+        <circle cx="82" cy="6" r="4" fill="#B10202" />
+        <path
+          d="M82 6H150"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.0s infinite' }}
+        />
+        <circle cx="229" cy="4" r="4" fill="#B10202" />
+        <circle cx="126" cy="29" r="4" fill="#B10202" />
+        <path
+          d="M126 29.0001H147H162.5L176 15.5H198L209 4.5H229"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.0s infinite' }}
+        />
+        <circle cx="311" cy="26" r="4" fill="#B10202" />
+        <circle cx="133" cy="63" r="4" fill="#B10202" />
+        <path
+          d="M133 63H160L185.5 37.5H221H264L275 26.5H311.5"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.0s infinite' }}
+        />
+        <circle cx="261" cy="28" r="4" fill="#B10202" />
+        <circle cx="137" cy="51" r="4" fill="#B10202" />
+        <path
+          d="M137 51.0001H158L180.5 28.5001H219.5L261 28.5"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.3s infinite' }}
+        />
+        <circle cx="190" cy="45" r="4" fill="#B10202" />
+        <path
+          d="M190 45H265L295.5 75.5H344.5L380.5 39.5H417.5H442L452.5 50H496"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.3s infinite' }}
+        />
+        <circle cx="496" cy="50" r="4" fill="#B10202" />
+        <circle cx="192" cy="61" r="4" fill="#B10202" />
+        <circle cx="275" cy="74" r="4" fill="#B10202" />
+        <path
+          d="M192 61H252.5H262L275 74"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.3s infinite' }}
+        />
+        <circle cx="232" cy="20" r="4" fill="#B10202" />
+        <circle cx="401" cy="29" r="4" fill="#B10202" />
+        <path
+          d="M232.5 19.5L240 12L249 3H307.5L334 29.5H373H401.5"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.3s infinite' }}
+        />
+        <path
+          d="M279.5 37C279.5 39.2091 277.709 41 275.5 41C273.291 41 271.5 39.2091 271.5 37C271.5 34.7909 273.291 33 275.5 33C277.709 33 279.5 34.7909 279.5 37Z"
+          fill="#B10202"
+        />
+        <circle cx="304" cy="66" r="4" fill="#B10202" />
+        <path
+          d="M275 37L304.5 66.5"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.3s infinite' }}
+        />
+        <circle cx="342" cy="42" r="4" fill="#B10202" />
+        <circle cx="297" cy="42" r="4" fill="#B10202" />
+        <path
+          d="M297 42H338.5"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.3s infinite' }}
+        />
+        <circle cx="344" cy="58" r="4" fill="#B10202" />
+        <circle cx="315" cy="58" r="4" fill="#B10202" />
+        <path
+          d="M315 58H344"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.3s infinite' }}
+        />
+        <circle cx="328" cy="5" r="4" fill="#B10202" />
+        <circle cx="650" cy="54" r="4" fill="#B10202" />
+        <path
+          d="M328 5H373H418.5H452L476 29H518L563.5 74.5H602.5L623.5 53.5H650"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.3s infinite' }}
+        />
+        <circle cx="509" cy="40" r="4" fill="#B10202" />
+        <circle cx="342" cy="15" r="4" fill="#B10202" />
+        <path
+          d="M342 15H409H430.5L456 40.5H508"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.3s infinite' }}
+        />
+        <circle cx="362" cy="70" r="4" fill="#B10202" />
+        <circle cx="383" cy="49" r="4" fill="#B10202" />
+        <path
+          d="M362 70L383 49"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.3s infinite' }}
+        />
+        <circle cx="380" cy="71" r="4" fill="#B10202" />
+        <circle cx="516" cy="61" r="4" fill="#B10202" />
+        <path
+          d="M380 71L402 49H438.5L450.5 61H516.5"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.3s infinite' }}
+        />
+        <path
+          d="M397 72H545.5"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.3s infinite' }}
+        />
+        <circle cx="545" cy="72" r="4" fill="#B10202" />
+        <circle cx="397" cy="72" r="4" fill="#B10202" />
+        <path
+          d="M476 4.5H544.5L561 21H612L628.5 4.5H679.5"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.3s infinite' }}
+        />
+        <circle cx="476" cy="4" r="4" fill="#B10202" />
+        <circle cx="679" cy="4" r="4" fill="#B10202" />
+        <path
+          d="M476 16H504.5"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.3s infinite' }}
+        />
+        <circle cx="476" cy="16" r="4" fill="#B10202" />
+        <circle cx="504" cy="16" r="4" fill="#B10202" />
+        <path
+          d="M524 16L572.5 64.5H598"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.3s infinite' }}
+        />
+        <circle cx="524" cy="16" r="4" fill="#B10202" />
+        <circle cx="598" cy="64" r="4" fill="#B10202" />
+        <path
+          d="M562.5 32.5H617L637 12.5H695L702 5.5H774.5"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.3s infinite' }}
+        />
+        <circle cx="562" cy="32" r="4" fill="#B10202" />
+        <circle cx="774" cy="5" r="4" fill="#B10202" />
+        <path
+          d="M571.5 44H744.5L775 74.5H945.5"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.3s infinite' }}
+        />
+        <circle cx="571" cy="44" r="4" fill="#B10202" />
+        <circle cx="945" cy="74" r="4" fill="#B10202" />
+        <path
+          d="M628.5 70H651.5L666.5 55H737"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.5s infinite' }}
+        />
+        <circle cx="628" cy="70" r="4" fill="#B10202" />
+        <circle cx="737" cy="55" r="4" fill="#B10202" />
+        <path
+          d="M629.5 33.5H733L751.5 15H832.5L846 28.5H900.5"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.5s infinite' }}
+        />
+        <circle cx="629" cy="33" r="4" fill="#B10202" />
+        <circle cx="900" cy="28" r="4" fill="#B10202" />
+        <path
+          d="M642.5 24H719.5"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.5s infinite' }}
+        />
+        <circle cx="642" cy="24" r="4" fill="#B10202" />
+        <circle cx="719" cy="24" r="4" fill="#B10202" />
+        <path
+          d="M669 70H727"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.5s infinite' }}
+        />
+        <circle cx="669" cy="70" r="4" fill="#B10202" />
+        <circle cx="727" cy="70" r="4" fill="#B10202" />
+        <path
+          d="M756.5 28.5H824"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.5s infinite' }}
+        />
+        <circle cx="756" cy="28" r="4" fill="#B10202" />
+        <circle cx="824" cy="28" r="4" fill="#B10202" />
+        <path
+          d="M771 44H946L981 9H1101"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.5s infinite' }}
+        />
+        <circle cx="771" cy="44" r="4" fill="#B10202" />
+        <circle cx="1101" cy="9" r="4" fill="#B10202" />
+        <path
+          d="M786.5 58H946H965.5L980 72.5H1085.5"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.5s infinite' }}
+        />
+        <circle cx="786" cy="58" r="4" fill="#B10202" />
+        <circle cx="1085" cy="72" r="4" fill="#B10202" />
+        <path
+          d="M798 6C798 8.20914 796.209 10 794 10C791.791 10 790 8.20914 790 6C790 3.79086 791.791 2 794 2C796.209 2 798 3.79086 798 6Z"
+          fill="#B10202"
+        />
+        <path
+          d="M955 17C955 19.2091 953.209 21 951 21C948.791 21 947 19.2091 947 17C947 14.7909 948.791 13 951 13C953.209 13 955 14.7909 955 17Z"
+          fill="#B10202"
+        />
+        <path
+          d="M794 6H845.5L857 17.5H934H951"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.5s infinite' }}
+        />
+        <path
+          d="M806 67H933"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.5s infinite' }}
+        />
+        <circle cx="806" cy="67" r="4" fill="#B10202" />
+        <circle cx="933" cy="67" r="4" fill="#B10202" />
+        <circle cx="872" cy="7" r="4" fill="#B10202" />
+        <circle cx="956" cy="7" r="4" fill="#B10202" />
+        <path
+          d="M872.5 7H956.5"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.5s infinite' }}
+        />
+        <path
+          d="M875 36H933"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.5s infinite' }}
+        />
+        <circle cx="875" cy="36" r="4" fill="#B10202" />
+        <circle cx="933" cy="36" r="4" fill="#B10202" />
+        <path
+          d="M971.5 41.5L993.5 19.5H1090L1124.5 54H1205"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.5s infinite' }}
+        />
+        <circle cx="971" cy="42" r="4" fill="#B10202" />
+        <circle cx="1205" cy="54" r="4" fill="#B10202" />
+        <circle cx="986" cy="64" r="4" fill="#B10202" />
+        <circle cx="1188" cy="63" r="4" fill="#B10202" />
+        <path
+          d="M986.5 63.5L1003 47H1085.5H1098L1114.5 63.5H1189"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.5s infinite' }}
+        />
+        <path
+          d="M1001.5 34H1086"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.5s infinite' }}
+        />
+        <circle cx="1001" cy="34" r="4" fill="#B10202" />
+        <circle cx="1086" cy="34" r="4" fill="#B10202" />
+        <circle cx="1006" cy="59" r="4" fill="#B10202" />
+        <circle cx="1090" cy="59" r="4" fill="#B10202" />
+        <path
+          d="M1006.5 58.5H1090"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.5s infinite' }}
+        />
+        <circle cx="1103" cy="74" r="4" fill="#B10202" />
+        <circle cx="1213" cy="74" r="4" fill="#B10202" />
+        <path
+          d="M1103 74H1213"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.5s infinite' }}
+        />
+        <circle cx="1104" cy="20" r="4" fill="#B10202" />
+        <circle cx="1262" cy="20" r="4" fill="#B10202" />
+        <path
+          d="M1105 20H1133.5L1146.5 7H1225.5L1238.5 20H1261.5"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.5s infinite' }}
+        />
+        <circle cx="1122" cy="31" r="4" fill="#B10202" />
+        <circle cx="1319" cy="50" r="4" fill="#B10202" />
+        <path
+          d="M1122 31.5H1234.5L1253 50H1319"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.5s infinite' }}
+        />
+        <circle cx="1141" cy="41" r="4" fill="#B10202" />
+        <circle cx="1225" cy="41" r="4" fill="#B10202" />
+        <path
+          d="M1141.5 41.5H1224.5"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.8s infinite' }}
+        />
+        <circle cx="1153" cy="17" r="4" fill="#B10202" />
+        <circle cx="1213" cy="17" r="4" fill="#B10202" />
+        <path
+          d="M1153 17H1213.5"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.8s infinite' }}
+        />
+        <circle cx="1262" cy="61" r="4" fill="#B10202" />
+        <circle cx="1221" cy="61" r="4" fill="#B10202" />
+        <path
+          d="M1221 61.5H1262"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.8s infinite' }}
+        />
+        <circle cx="1236" cy="71" r="4" fill="#B10202" />
+        <circle cx="1447" cy="7" r="4" fill="#B10202" />
+        <path
+          d="M1236.5 71.5H1271L1283 59.5H1320H1344L1360 43.5L1396 7.5H1447"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.8s infinite' }}
+        />
+        <circle cx="1270" cy="42" r="4" fill="#B10202" />
+        <circle cx="1306" cy="6" r="4" fill="#B10202" />
+        <path
+          d="M1270.5 42L1306 6.5"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.8s infinite' }}
+        />
+        <circle cx="1496" cy="76" r="4" fill="#B10202" />
+        <circle cx="1291" cy="73" r="4" fill="#B10202" />
+        <path
+          d="M1291.5 73H1342L1352 63H1387.5L1400.5 76H1472H1496.5"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.8s infinite' }}
+        />
+        <circle cx="1295" cy="41" r="4" fill="#B10202" />
+        <circle cx="1330" cy="6" r="4" fill="#B10202" />
+        <path
+          d="M1295 41.5L1330.5 6"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.8s infinite' }}
+        />
+        <circle cx="1315" cy="40" r="4" fill="#B10202" />
+        <circle cx="1351" cy="40" r="4" fill="#B10202" />
+        <path
+          d="M1315 40.5H1351"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.8s infinite' }}
+        />
+        <circle cx="1326" cy="31" r="4" fill="#B10202" />
+        <circle cx="1377" cy="6" r="4" fill="#B10202" />
+        <path
+          d="M1326 31H1352L1377 6"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.8s infinite' }}
+        />
+        <circle cx="1360" cy="54" r="4" fill="#B10202" />
+        <circle cx="1445" cy="67" r="4" fill="#B10202" />
+        <path
+          d="M1359.5 54.5H1397.5L1410.5 67.5H1445.5"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.8s infinite' }}
+        />
+        <circle cx="1377" cy="37" r="4" fill="#B10202" />
+        <circle cx="1484" cy="58" r="4" fill="#B10202" />
+        <path
+          d="M1375 37.5H1409.5H1439L1460 58.5H1484.5"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.8s infinite' }}
+        />
+        <circle cx="1396" cy="26" r="4" fill="#B10202" />
+        <circle cx="1469" cy="26" r="4" fill="#B10202" />
+        <path
+          d="M1397 26.5H1469.5"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.8s infinite' }}
+        />
+        <circle cx="1399" cy="17" r="4" fill="#B10202" />
+        <circle cx="1559" cy="17" r="4" fill="#B10202" />
+        <path
+          d="M1399.5 17H1478L1488 27H1521L1531 17H1559"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 0.8s infinite' }}
+        />
+        <circle cx="1453" cy="37" r="4" fill="#B10202" />
+        <circle cx="1578" cy="24" r="4" fill="#B10202" />
+        <path
+          d="M1453 37H1524L1537 24H1578"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 1.0s infinite' }}
+        />
+        <circle cx="1463" cy="7" r="4" fill="#B10202" />
+        <circle cx="1573" cy="7" r="4" fill="#B10202" />
+        <path
+          d="M1463.5 7H1573.5"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 1.0s infinite' }}
+        />
+        <circle cx="1463" cy="45" r="4" fill="#B10202" />
+        <circle cx="1586" cy="56" r="4" fill="#B10202" />
+        <path
+          d="M1463 45.5H1530.5L1541.5 56.5H1586"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 1.0s infinite' }}
+        />
+        <circle cx="1495" cy="65" r="4" fill="#B10202" />
+        <circle cx="1694" cy="47" r="4" fill="#B10202" />
+        <path
+          d="M1495 65H1530L1540 75H1590H1626L1654 47H1693.5"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 1.0s infinite' }}
+        />
+        <circle cx="1602" cy="37" r="4" fill="#B10202" />
+        <circle cx="1541" cy="37" r="4" fill="#B10202" />
+        <path
+          d="M1541 37H1602"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 1.0s infinite' }}
+        />
+        <circle cx="1549" cy="66" r="4" fill="#B10202" />
+        <circle cx="1603" cy="66" r="4" fill="#B10202" />
+        <path
+          d="M1549 66H1602.5"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 1.0s infinite' }}
+        />
+        <circle cx="1560" cy="47" r="4" fill="#B10202" />
+        <circle cx="1614" cy="47" r="4" fill="#B10202" />
+        <path
+          d="M1560 47H1613.5"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 1.0s infinite' }}
+        />
+        <circle cx="1635" cy="50" r="4" fill="#B10202" />
+        <circle cx="1592" cy="8" r="4" fill="#B10202" />
+        <path
+          d="M1592.5 7.5L1635 50"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 1.0s infinite' }}
+        />
+        <circle cx="1617" cy="4" r="4" fill="#B10202" />
+        <circle cx="1735" cy="17" r="4" fill="#B10202" />
+        <path
+          d="M1618 4H1683L1696.5 17.5H1735"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 1.0s infinite' }}
+        />
+        <circle cx="1624" cy="14" r="4" fill="#B10202" />
+        <circle cx="1676.5" cy="14" r="4" fill="#B10202" />
+        <path
+          d="M1625 14H1676.5"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 1.0s infinite' }}
+        />
+        <circle cx="1636" cy="28" r="4" fill="#B10202" />
+        <circle cx="1821" cy="5" r="4" fill="#B10202" />
+        <path
+          d="M1636 28H1753L1775.5 5.5H1820.5"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 1.3s infinite' }}
+        />
+        <path
+          d="M1652.5 73.5H1735L1752.5 56H1808L1825.5 73.5H1879.5"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 1.3s infinite' }}
+        />
+        <circle cx="1652" cy="73" r="4" fill="#B10202" />
+        <circle cx="1879" cy="73" r="4" fill="#B10202" />
+        <path
+          d="M1655.5 56L1665.5 66H1729.5"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 1.3s infinite' }}
+        />
+        <circle cx="1730" cy="66" r="4" fill="#B10202" />
+        <circle cx="1656" cy="56" r="4" fill="#B10202" />
+        <circle cx="1659" cy="36" r="4" fill="#B10202" />
+        <circle cx="1741" cy="36" r="4" fill="#B10202" />
+        <path
+          d="M1658.5 36.5H1741"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 1.3s infinite' }}
+        />
+        <path
+          d="M1673 57H1733.5"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 1.3s infinite' }}
+        />
+        <circle cx="1673" cy="57" r="4" fill="#B10202" />
+        <circle cx="1733" cy="57" r="4" fill="#B10202" />
+        <path
+          d="M1706 5H1753.5"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 1.3s infinite' }}
+        />
+        <circle cx="1706" cy="5" r="4" fill="#B10202" />
+        <circle cx="1754" cy="5" r="4" fill="#B10202" />
+        <path
+          d="M1706.5 47H1758.5L1769.5 36H1821"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 1.3s infinite' }}
+        />
+        <circle cx="1707" cy="47" r="4" fill="#B10202" />
+        <circle cx="1821" cy="36" r="4" fill="#B10202" />
+        <path
+          d="M1754.5 69H1805"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 1.3s infinite' }}
+        />
+        <circle cx="1754" cy="69" r="4" fill="#B10202" />
+        <circle cx="1805" cy="69" r="4" fill="#B10202" />
+        <path
+          d="M1773.5 24.5H1830.5"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 1.3s infinite' }}
+        />
+        <circle cx="1831" cy="24" r="4" fill="#B10202" />
+        <circle cx="1773" cy="24" r="4" fill="#B10202" />
+        <path
+          d="M1777.5 44H1848"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 1.3s infinite' }}
+        />
+        <circle cx="1777" cy="44" r="4" fill="#B10202" />
+        <circle cx="1848" cy="44" r="4" fill="#B10202" />
+        <path
+          d="M1779 14H1832.5L1842.5 4H1908.5H1915"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 1.3s infinite' }}
+        />
+        <circle cx="1915" cy="4" r="4" fill="#B10202" />
+        <circle cx="1779" cy="14" r="4" fill="#B10202" />
+        <path
+          d="M1818 54H1863.5H1866.5H1870.5L1890 73.5H1916"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 1.3s infinite' }}
+        />
+        <circle cx="1818" cy="54" r="4" fill="#B10202" />
+        <circle cx="1915" cy="73" r="4" fill="#B10202" />
+        <path
+          d="M1838 35.5L1862 11.5"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 1.3s infinite' }}
+        />
+        <circle cx="1862" cy="11" r="4" fill="#B10202" />
+        <circle cx="1838" cy="35" r="4" fill="#B10202" />
+        <path
+          d="M1855 35H1914"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 1.3s infinite' }}
+        />
+        <circle cx="1855" cy="35" r="4" fill="#B10202" />
+        <circle cx="1914" cy="35" r="4" fill="#B10202" />
+        <path
+          d="M1866 23.5H1903"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 1.3s infinite' }}
+        />
+        <circle cx="1866" cy="23" r="4" fill="#B10202" />
+        <circle cx="1903" cy="23" r="4" fill="#B10202" />
+        <path
+          d="M1867 45H1878.5L1887 53.5H1915.5"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 1.3s infinite' }}
+        />
+        <circle cx="1867" cy="45" r="4" fill="#B10202" />
+        <circle cx="1916" cy="53" r="4" fill="#B10202" />
+        <path
+          d="M1876 14.5H1912.5"
+          stroke="#B10202"
+          stroke-width="4"
+          strokeDasharray='500'
+          style={{ animation: 'svg 2.3s ease-in-out 1.3s infinite' }}
+        />
+        <circle cx="1913" cy="14" r="4" fill="#B10202" />
+        <circle cx="1876" cy="14" r="4" fill="#B10202" />
       </svg>
+
       {/* strokeDasharray="300" strokeDashoffset={isVisible ? '0' : '300'}
       style=
       {{
