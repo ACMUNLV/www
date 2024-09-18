@@ -103,8 +103,8 @@ export const Header = () => {
                 <h3 className="mb-2 text-lg font-semibold">Socials</h3>
                 <div className="flex flex-wrap gap-2">
                   {socials.socialLinks.map((socialLink, index) => (
-                    <Button variant="secondary" size="icon">
-                      <Link key={index} href={socialLink.href} aria-label={socialLink.alt} className="text-xl">
+                    <Button key={index} variant="secondary" size="icon">
+                      <Link href={socialLink.href} aria-label={socialLink.alt} className="text-xl">
                         {socialLink.icon}
                       </Link>
                     </Button>
