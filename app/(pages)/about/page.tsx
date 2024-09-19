@@ -40,7 +40,12 @@ export default function AboutPage() {
         </div>
         <div className="space-y-4 text-center lg:text-left">
           <h1 className="text-4xl font-bold">{texts.aboutPage['why-join'].title}</h1>
-          <p className="max-w-[400px] text-left">{texts.aboutPage['why-join'].description}</p>
+          {texts.aboutPage['why-join'].sections.map((section, index) => (
+            <div key={index} className="mb-2">
+              <h3 className="max-w-[400px] text-left text-xl font-medium">{section.header}</h3>
+              <h3 className="max-w-[400px] text-left">{section.paragraph}</h3>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -53,7 +58,7 @@ export default function AboutPage() {
             height={500}
             className="h-auto w-64 lg:w-96"
           />
-          <a href="https://involvementcenter.unlv.edu/organization/unlv-acm" target="_blank">
+          <a href="https://involvementcenter.unlv.edu/organization/unlv-acm" target="_blank" rel="noopener noreferrer">
             <Button size="lg">Involvement Center</Button>
           </a>
         </div>

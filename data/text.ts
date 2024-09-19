@@ -23,12 +23,33 @@ export const texts = {
     },
     'why-join': {
       title: 'Why Join?',
-      // could make sections similar to the sections in projects.ts
-      description: ` 
-        Competitive Programing fasdfasdfasdfasdf  -daniel
-        Open Source Projects asasdffasdfasdf  -daniel
-        Professional Development
-        `,
+      sections: [
+        {
+          header: 'Competitive Programming',
+          paragraph: `
+          ACM UNLV provides opportunities for students to participate in the International Collegiate Programming Contest (ICPC), 
+          where you can test and sharpen your problem-solving skills. Through collaborative training sessions, 
+          you'll gain invaluable experience in tackling complex challenges under pressure, preparing you for 
+          real-world scenarios.
+          `,
+        },
+        {
+          header: 'Open Source Projects',
+          paragraph: `
+          Collaborating on open-source projects is a great way to grow as a developer. At ACM UNLV, we encourage students 
+          to contribute to various projects, allowing you to build practical applications while working alongside your peers.
+          You'll improve your coding skills, learn new technologies, and become part of the global open-source community.
+          `,
+        },
+        {
+          header: 'Professional Development',
+          paragraph: `
+          ACM UNLV connects you with professionals from leading tech companies through events, talks, and mentorship. 
+          You'll have the chance to network, learn from experts in the field, and discover how to navigate your career 
+          in Computer Science. Whether it's landing your first internship or exploring new opportunities, ACM helps you grow.
+          `,
+        },
+      ],
       images: [
         {
           src: '/img/ICPC.png',
