@@ -1,6 +1,5 @@
 import { FooterWrapper } from '@/components/common/footer-wrapper'
-import ThemeToggle from '@/components/common/theme-toggle'
-import { socials } from '@/components/common/socials'
+import { socials } from '@/data/links'
 import { texts } from '@/data/text'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -18,7 +17,6 @@ export default function Footer() {
             {/* Logo */}
             <div className="mb-2">
               <Link href={socials.logo.link} className="inline-block" aria-label={socials.logo.alt}>
-                {/* Logo image, change but imma pick one LMAFO */}
                 <Image
                   src={socials.logo.src}
                   className="h-10 dark:invert"
@@ -31,29 +29,41 @@ export default function Footer() {
             </div>
 
             {/* Gaslighting */}
-            <div className="text-muted-foreground mb-4">{texts.footer.gaslighting}</div>
+            <div className="mb-4 text-muted-foreground">{texts.footer.gaslighting}</div>
           </div>
 
           {/* TOP RIGHT */}
           <div className="grid gap-8 sm:grid-cols-3 md:col-span-8 lg:col-span-7">
-            {socials.blocks.map((block, index) => (
-              <div className="text-sm" key={index}>
-                <h6 className="text-foreground mb-1 font-medium brightness-90">{block.title}</h6>
-                <ul>
-                  {block.links.map((link, linkIndex) => (
-                    <li className="group mb-1" key={linkIndex}>
-                      <Link
-                        href={link.href}
-                        className="text-muted-foreground group-hover:text-foreground flex items-center transition duration-150 ease-in-out"
-                      >
-                        <div className="mr-2 h-0.5 w-3 bg-red-400 transition-all group-hover:w-5"></div>
-                        {link.text}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
+            <div>
+              <h6 className="mb-1 font-medium text-foreground">Pages</h6>
+              <ul>
+                {socials.pageLinks.map((pageLink, index) => (
+                  <li className="group mb-1" key={index}>
+                    <Link
+                      href={pageLink.href}
+                      className="flex items-center text-muted-foreground transition duration-150 ease-in-out group-hover:text-foreground"
+                    >
+                      <div className="mr-2 h-0.5 w-3 bg-primary transition-all group-hover:w-5"></div>
+                      {pageLink.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h6 className="mb-1 font-medium text-foreground">Reach out at</h6>
+              <ul>
+                <li className="group mb-1">
+                  <Link
+                    href="mailto:acm@unlv.edu"
+                    className="flex items-center text-muted-foreground transition duration-150 ease-in-out group-hover:text-foreground"
+                  >
+                    <div className="mr-2 h-0.5 w-3 bg-primary transition-all group-hover:w-5"></div>
+                    acm@unlv.edu
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
 
@@ -65,10 +75,10 @@ export default function Footer() {
               <li className={index !== 0 ? 'ml-4' : ''} key={index}>
                 <Link
                   href={socialLink.href}
-                  className="hover:bg-tertiary flex items-center justify-center rounded-full p-2 text-gray-400 transition duration-150 ease-in-out hover:text-red-400"
+                  className="hover:bg-tertiary flex items-center justify-center rounded-full p-2 text-lg text-neutral-400 transition duration-150 ease-in-out hover:text-primary"
                   aria-label={socialLink.alt}
-                  target='_blank'
-                  rel='noopener noreferrer'
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   {socialLink.icon}
                 </Link>
@@ -76,13 +86,9 @@ export default function Footer() {
             ))}
           </ul>
 
-          <div className="mr-4 text-sm">
-            &copy; {socials.copyright} {/* Adjusted */}
-          </div>
-          
-          <div className="flex justify-center mx-auto ">
-            <ThemeToggle />
-          </div>
+          <span>Copyright &copy; ACM at UNLV {currentYear}</span>
+
+          <div className="mx-auto flex justify-center "></div>
         </div>
       </FooterWrapper>
     </>

@@ -76,21 +76,21 @@ export const AboutModal: React.FC<AboutModalProps> = ({ isOpen, onClose, activit
 
   return (
     <div className="fixed inset-0 z-50 overflow-y-auto" data-aos="fade-down" data-aos-delay="150">
-      <div className="px-5 flex min-h-screen items-center justify-center">
+      <div className="flex min-h-screen items-center justify-center px-5">
         <div className="fixed inset-0 bg-black opacity-30" aria-hidden="true" onClick={onClose}></div>
 
         {/* Modal itself */}
-        <div className="relative lg:bottom-32  z-50 mx-auto w-full max-w-xl rounded-lg bg-white shadow dark:bg-gray-700 md:h-auto">
+        <div className="relative z-50  mx-auto w-full max-w-xl rounded-lg bg-white shadow dark:bg-gray-700 md:h-auto lg:bottom-32">
           {/* Modal content */}
           <div className="relative rounded-lg bg-white shadow dark:bg-gray-700">
             {/* header */}
             <div className="flex items-center justify-between rounded-t border-b p-5 dark:border-gray-600">
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white lg:text-2xl">
+              <h3 className="text-xl font-semibold text-neutral-900 dark:text-white lg:text-2xl">
                 {activity || 'Activity'}
               </h3>
               <button
                 type="button"
-                className="ml-auto inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900 dark:hover:bg-gray-600 dark:hover:text-white"
+                className="ml-auto inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-neutral-400 hover:bg-gray-200 hover:text-neutral-900 dark:hover:bg-gray-600 dark:hover:text-white"
                 onClick={onClose}
               >
                 {/* Close button SVG */}
