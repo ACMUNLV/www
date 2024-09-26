@@ -1,5 +1,6 @@
 'use client'
 
+import { useState } from 'react'
 import { Menu } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -20,6 +21,11 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 export const Header = () => {
   const pathname = usePathname()
 
+  const [open, setOpen] = useState(false)
+
+  const handleLinkClick = () => {
+    setOpen(false)
+  }
   return (
     <header className="fixed top-0 z-30 w-full bg-background px-5 shadow-md transition duration-500 ease-in-out md:bg-opacity-90">
       <div className="flex h-20 items-center justify-between">
@@ -51,7 +57,7 @@ export const Header = () => {
             <NavigationMenuItem>
               <NavigationMenuTrigger>Socials</NavigationMenuTrigger>
               <NavigationMenuContent>
-                <ul className="gap-x-0.5 p-2.5 flex flex-row">
+                <ul className="flex flex-row gap-x-0.5 p-2.5">
                   {socials.socialLinks.map((socialLink, index) => (
                     <li key={index}>
                       <span>
@@ -85,7 +91,7 @@ export const Header = () => {
         </NavigationMenu>
 
         {/* Mobile Nav */}
-        <Sheet>
+        <Sheet open={open} onOpenChange={setOpen}>
           <SheetTrigger asChild className="lg:hidden">
             <Button variant="ghost" size="icon" className="hover:text-primary">
               <Menu className="h-6 w-6" />
@@ -95,7 +101,7 @@ export const Header = () => {
           <SheetContent side="right">
             <nav className="flex flex-col space-y-4">
               {socials.pageLinks.map((pageLink, index) => (
-                <Link key={index} href={pageLink.href} className="text-lg font-bold">
+                <Link key={index} href={pageLink.href} className="text-lg font-bold" onClick={handleLinkClick}>
                   {pageLink.name}
                 </Link>
               ))}

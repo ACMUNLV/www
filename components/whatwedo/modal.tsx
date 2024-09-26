@@ -28,9 +28,14 @@ const WorkShop = () => {
 
 const Networking = () => {
   return (
-    <div className="w-44">
+    <div>
       <h2 className="text-lg font-semibold">Networking Events</h2>
-      <p className="mt-2">Coming soon</p>
+      <p className="mt-2">
+        We will soon be introducing professional development events that can help bolster your skills, expand your
+        network, and enhance your career prospects. These events will feature workshops, guest speakers, and hands-on
+        activities tailored to various fields and interests. Whether you're looking to improve your technical expertise,
+        develop leadership qualities, or learn about industry trends, there will be opportunities for everyone.
+      </p>
     </div>
   )
 }
@@ -45,11 +50,11 @@ const ICPC = () => {
       </p>
       <h3 className="text-md mt-4 font-semibold">Preparation for the competition:</h3>
       <ul className="ml-5 list-disc">
-        <li>Learn how to use Vim or Emacs</li>
+        <li>Learn different problem solving techniques</li>
         <li>Have a solid foundation of the functioning and syntax of C++, Python, or Java</li>
         <li>
           Try and solve past ICPC problems that can be found{' '}
-          <a href="https://example.com" className="text-blue-500 hover:text-blue-700">
+          <a href="https://icpcarchive.github.io/" className="text-blue-500 hover:text-blue-700">
             here
           </a>
         </li>

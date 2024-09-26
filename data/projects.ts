@@ -48,7 +48,7 @@ export const Projects: Project[] = [
         `,
       },
     ],
-    src: '/img/img3.jpg',
+    src: '/img/logo/logo-bordered.png',
     alt: 'LCD Display Image',
   },
   {
@@ -102,7 +102,7 @@ export const Projects: Project[] = [
         `,
       },
     ],
-    src: '/img/img3.jpg',
+    src: '/img/logo/logo-bordered.png',
     alt: 'testing out stuff',
   },
 ]
