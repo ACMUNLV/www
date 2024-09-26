@@ -18,7 +18,7 @@ export const texts = {
         in the industry, gain coding experience, and land internships! 
         Anyone with a passion for coding or for Computer Science are welcome to join!
         `,
-      src: '/img/logo-bordered.png',
+      src: '/img/logo/logo-bordered.png',
       alt: 'ACM UNLV Logo',
     },
     'why-join': {
