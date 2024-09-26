@@ -31,7 +31,7 @@ export const Header = () => {
       <div className="flex h-20 items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex flex-row items-center justify-center transition ease-in hover:scale-105">
-          <Image src="/img/logo/logo.svg" alt={'ACM UNLV Logo'} width={50} height={65} />
+          <Image src="/img/logo/logo.png" alt={'ACM UNLV Logo'} width={50} height={62} />
           <span className="ml-2 w-full text-xl font-semibold">ACM UNLV</span>
         </Link>
 

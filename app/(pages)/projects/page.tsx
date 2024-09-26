@@ -12,7 +12,7 @@ export default function ProjectsPage() {
     <>
       <section className="mx-auto flex max-w-[900px] flex-col items-center justify-center gap-6">
         <h1 className="text-2xl lg:text-6xl">Projects</h1>
-        <div className="my-4 px-4 flex flex-wrap items-center justify-center gap-4">
+        <div className="my-4 px-4 grid lg:grid-cols-2 grid-cols-1 items-center justify-center gap-4">
           {Projects.map((project) => (
             <Link key={project.id} href={`/projects/${project.id}`}>
               <ProjectCard project={project} />

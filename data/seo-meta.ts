@@ -21,8 +21,8 @@ export const seoKeywords = [
 export const siteMetadata = {
   title: 'ACM UNLV - Advancing Computer Science',
   icon: '/favicon.ico',
-  description:
-    `ACM UNLV is a student organization dedicated to empowering the computer science community
-     through competitive programming, workshops, and networking opportunities. Join us to enhance your skills and connect with fellow tech enthusiasts!
-     `,
+  description: `
+    ACM UNLV is a student organization dedicated to empowering the computer science community through competitive programming,
+     workshops, and networking opportunities. Join us to enhance your skills and connect with fellow tech enthusiasts!
+    `,
 }

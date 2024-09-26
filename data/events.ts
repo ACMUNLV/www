@@ -22,30 +22,21 @@ export const Events: Event[] = [
     type: 'Competition',
   },
   {
-    title: 'Dynamic Programming',
-    date: new Date('2024-09-18T00:00:00'), // September 18, 2024
-    startTime: new Date('2024-09-18T17:00:00'), // 5:00pm  PST
-    endTime: new Date('2024-09-18T18:00:00'),   // 6:00pm PST
-    description: 'General Event',
-    location: 'TBE-B 361',
-    type: 'General',
-  },
-  {
-    title: 'Graph Theory',
-    date: new Date('2024-09-25T00:00:00'), // September 25, 2024
-    startTime: new Date('2024-09-25T17:00:00'), // 5:00pm  PST
-    endTime: new Date('2024-09-25T18:00:00'), // 6:00pm PST
-    description: 'General Event',
-    location: 'TBE-B 361',
-    type: 'General',
-  },
-  {
-    title: 'Hashmaps',
+    title: 'General Meeting',
     date: new Date('2024-10-02T00:00:00'), // September 18, 2024
     startTime: new Date('2024-10-02T17:00:00'), //5:00 - 6:00pm PSt,
     endTime: new Date('2024-10-02T18:00:00'), //5:00 - 6:00pm PSt,
     description: 'General Event',
     location: 'TBE-B 361',
     type: 'General',
+  },
+  {
+    title: 'Python Workshop',
+    date: new Date('2024-11-18T00:00:00'), // November 18, 2024
+    startTime: new Date('2024-11-18T17:00:00'), //5:00 - 6:00pm PSt,
+    endTime: new Date('2024-11-18T18:00:00'), //5:00 - 6:00pm PSt,
+    description: 'General Event',
+    location: 'TBE-B 361',
+    type: 'Workshop',
   },
 ]

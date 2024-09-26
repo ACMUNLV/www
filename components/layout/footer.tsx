@@ -19,11 +19,10 @@ export default function Footer() {
               <Link href={socials.logo.link} className="inline-block" aria-label={socials.logo.alt}>
                 <Image
                   src={socials.logo.src}
-                  className="h-10 dark:invert"
                   alt={socials.logo.alt}
                   priority
-                  width={40}
-                  height={40}
+                  width={50}
+                  height={62}
                 />
               </Link>
             </div>
