@@ -50,13 +50,6 @@ export default function MemberList() {
               {person.school} {/* School */}
             </span>
 
-            <span className="mb-2 flex flex-wrap items-center justify-center gap-1">
-              {person.titles.map((role, index) => (
-                <Badge key={index} variant="outline" className="font-normal">
-                  {role}
-                </Badge>
-              ))}
-            </span>
           </div>
         ))}
       </div>

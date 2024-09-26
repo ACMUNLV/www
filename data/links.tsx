@@ -4,7 +4,7 @@ export const socials = {
   logo: {
     link: '/',
     alt: 'ACM UNLV',
-    src: '/img/logo.svg',
+    src: '/img/logo/logo.svg',
   },
 
   // ACM Social Links

@@ -34,7 +34,7 @@ export const texts = {
           `,
         },
         {
-          header: 'Open Source Projects',
+          header: 'Project Development',
           paragraph: `
           Collaborating on open-source projects is a great way to grow as a developer. At ACM UNLV, we encourage students 
           to contribute to various projects, allowing you to build practical applications while working alongside your peers.
@@ -52,26 +52,35 @@ export const texts = {
       ],
       images: [
         {
-          src: '/img/ICPC.png',
-          alt: 'ICPC / competitive programming',
+          src: '/img/about-page/icpc-preparation.jpg',
+          alt: 'ACM UNLV Members working on ICPC problems in teams',
+          width: 520,
+          height: 384,
         },
         {
-          src: '/img/ICPC.png',
-          alt: 'ICPC / competitive programming',
+          src: '/img/about-page/projects.jpg',
+          alt: 'ACM UNLV Members working collaboratively on a project.',
+          width: 520,
+          height: 384,
         },
         {
-          src: '/img/ICPC.png',
-          alt: 'ICPC / competitive programming',
+          src: '/img/about-page/professional-development.jpg',
+          alt: 'ACM Professional Development',
+          width: 520,
+          height: 384,
         },
       ],
     },
     'involvement': {
       title: 'How To Get Involved?',
       description: `
-        Get Involed through blah blah blah -daniel
+            Make sure to become a member throuhg UNLV's Involvement Center.
+            Get involved with ACM UNLV by joining our meetings, participating in workshops, hackathons, and competitions, 
+            or contributing to open-source projects. Follow us on social media, join our Discord server, and explore leadership 
+            opportunities to connect with peers and build skills in a collaborative environment.
         `,
-      src: '/img/eh.jpg',
-      alt: 'image most likely to be changed',
+      src: '/img/about-page/join-us.jpg',
+      alt: 'First ACM Meeting Group Photo',
     },
   },
   whatwedo: {

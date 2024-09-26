@@ -25,7 +25,7 @@ export const Header = () => {
       <div className="flex h-20 items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex flex-row items-center justify-center transition ease-in hover:scale-105">
-          <Image src="/img/logo.svg" alt={'ACM UNLV Logo'} width={50} height={65} />
+          <Image src="/img/logo/logo.svg" alt={'ACM UNLV Logo'} width={50} height={65} />
           <span className="ml-2 w-full text-xl font-semibold">ACM UNLV</span>
         </Link>
 
@@ -51,10 +51,10 @@ export const Header = () => {
             <NavigationMenuItem>
               <NavigationMenuTrigger>Socials</NavigationMenuTrigger>
               <NavigationMenuContent>
-                <ul className="gap-3 p-4">
-                  <li className="flex">
-                    {socials.socialLinks.map((socialLink, index) => (
-                      <span className={index !== 0 ? 'ml-4' : ''} key={index}>
+                <ul className="gap-x-0.5 p-2.5 flex flex-row">
+                  {socials.socialLinks.map((socialLink, index) => (
+                    <li key={index}>
+                      <span>
                         <Link
                           href={socialLink.href}
                           className="flex items-center justify-center rounded-full p-2 text-neutral-400 transition hover:text-primary"
@@ -64,8 +64,8 @@ export const Header = () => {
                           {socialLink.icon}
                         </Link>
                       </span>
-                    ))}
-                  </li>
+                    </li>
+                  ))}
                 </ul>
               </NavigationMenuContent>
             </NavigationMenuItem>
