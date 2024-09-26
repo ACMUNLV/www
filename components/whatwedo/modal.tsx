@@ -33,8 +33,9 @@ const Networking = () => {
       <p className="mt-2">
         We will soon be introducing professional development events that can help bolster your skills, expand your
         network, and enhance your career prospects. These events will feature workshops, guest speakers, and hands-on
-        activities tailored to various fields and interests. Whether you're looking to improve your technical expertise,
-        develop leadership qualities, or learn about industry trends, there will be opportunities for everyone.
+        activities tailored to various fields and interests. Whether you&apos;re looking to improve your technical
+        expertise, develop leadership qualities, or learn about industry trends, there will be opportunities for
+        everyone.
       </p>
     </div>
   )
