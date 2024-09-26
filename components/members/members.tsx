@@ -28,7 +28,7 @@ export default function MemberList() {
             <a href={person.link} target="_blank" rel="noreferrer">
               <Image
                 src={person.src}
-                alt="Profile picture"
+                alt={person.name}
                 width={80}
                 height={80}
                 className="mb-4 h-20 w-20 rounded-full border object-cover"

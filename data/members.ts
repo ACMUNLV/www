@@ -18,7 +18,7 @@ export const members: Person[] = [
   {
     name: 'Athansios Tassiadamis',
     school: 'University of Nevada, Las Vegas',
-    src: '/img/members/athanasios-tassiadamis.JPG',
+    src: '/img/members/athanasios-tassiadamis.jpg',
     link: 'https://www.linkedin.com/in/athanasios-t-8a17b4294/',
     title: 'Vice President of Competitive Programming',
   },

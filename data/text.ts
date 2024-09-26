@@ -98,7 +98,7 @@ export const texts = {
         and gain competition experience with other university students.
         `,
         linkText: 'Learn More',
-        img: '/img/ICPC.png',
+        img: '/img/icpc.png',
       },
       second: {
         title: 'Coding Workshops',
