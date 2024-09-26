@@ -50,8 +50,8 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
       </div>
       <Image src={project.src} alt={project.alt} className="my-4 rounded-xl" height={1000} width={1000} />
       <div className="mb-16">
-        {project.sections.map((section) => (
-          <div className="flex flex-col items-center justify-center gap-2 my-4">
+        {project.sections.map((section, index) => (
+          <div key={index} className="flex flex-col items-center justify-center gap-2 my-4">
             <h1 className="text-3xl font-semibold">{section.header}</h1>
             <p className="text-sm md:text-lg text-neutral-700">{section.paragraph}</p>
           </div>

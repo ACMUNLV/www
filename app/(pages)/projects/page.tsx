@@ -14,7 +14,7 @@ export default function ProjectsPage() {
         <h1 className="text-2xl lg:text-6xl">Projects</h1>
         <div className="my-4 px-4 flex flex-wrap items-center justify-center gap-4">
           {Projects.map((project) => (
-            <Link href={`/projects/${project.id}`}>
+            <Link key={project.id} href={`/projects/${project.id}`}>
               <ProjectCard project={project} />
             </Link>
           ))}
