@@ -47,7 +47,7 @@ export const members: Person[] = [
     name: 'Katrina Parsom',
     school: 'University of Nevada, Las Vegas',
     src: '/img/members/katrina-parsom.jpg',
-    link: 'https://github.com/tbd',
+    link: 'https://www.linkedin.com/in/katrina-parsom/',
     title: 'Secretary',
   },
   {
@@ -61,7 +61,7 @@ export const members: Person[] = [
     name: 'Dorian Akhavan',
     school: 'University of Nevada, Las Vegas',
     src: '/img/members/dorian-akhavan.jpeg',
-    link: '',
+    link: 'https://www.linkedin.com/in/dorian-akhavan-516b48250/',
     title: 'Officer',
   },
 ]
