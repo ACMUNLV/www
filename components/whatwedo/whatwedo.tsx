@@ -35,8 +35,8 @@ export default function WhatWedo() {
         <InfoCard
           header={texts.whatwedo.tabs.first.title}
           linkText={texts.whatwedo.tabs.first.linkText}
-          image={texts.whatwedo.tabs.first.img}
-          description={texts.whatwedo.tabs.first.description}
+	  image={texts.whatwedo.tabs.first.img}
+	  description={texts.whatwedo.tabs.first.description}
         />
         <InfoCard
           header={texts.whatwedo.tabs.third.title}

@@ -18,7 +18,7 @@ export const texts = {
         in the industry, gain coding experience, and land internships!
         Anyone with a passion for coding or for Computer Science are welcome to join!
         `,
-      src: '/img/logo/logo-bordered.png',
+      src: '/img/logo/logo.svg',
       alt: 'ACM UNLV Logo',
     },
     'why-join': {
@@ -52,19 +52,19 @@ export const texts = {
       ],
       images: [
         {
-          src: '/img/about-page/icpc-preparation.jpg',
+          src: '/img/about-page/icpc-preparation.svg',
           alt: 'ACM UNLV Members working on ICPC problems in teams',
           width: 520,
           height: 384,
         },
         {
-          src: '/img/about-page/projects.jpg',
+          src: '/img/about-page/projects.png',
           alt: 'ACM UNLV Members working collaboratively on a project.',
           width: 520,
           height: 384,
         },
         {
-          src: '/img/about-page/professional-development.jpg',
+          src: '/img/about-page/professional-development.svg',
           alt: 'ACM Professional Development',
           width: 520,
           height: 384,
@@ -79,7 +79,7 @@ export const texts = {
             or contributing to open-source projects. Follow us on social media, join our Discord server, and explore leadership
             opportunities to connect with peers and build skills in a collaborative environment.
         `,
-      src: '/img/about-page/join-us.jpg',
+      src: '/img/about-page/join-us.svg',
       alt: 'First ACM Meeting Group Photo',
     },
   },
@@ -98,7 +98,7 @@ export const texts = {
         and gain competition experience with other university students.
         `,
         linkText: 'Learn More',
-        img: '/img/icpc.png',
+        img: '/img/icpc.svg',
       },
       second: {
         title: 'Coding Workshops',
