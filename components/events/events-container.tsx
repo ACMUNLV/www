@@ -7,8 +7,10 @@ interface EventsContainerProps {
 
 export const EventsContainer = ({ selectedType }: EventsContainerProps) => {
   const filteredEvents = Events.filter((event) => selectedType === 'All' || event.type === selectedType)
-  const sortedEvents = filteredEvents.sort((a, b) => a.date.getTime() - b.date.getTime())
-
+  const today = new Date()
+  today.setHours(0, 0, 0, 0) // Reset time to start of the day
+  const upcomingEvents = filteredEvents.filter((event) => event.date.getTime() >= today.getTime())
+  const sortedEvents = upcomingEvents.sort((a, b) => a.date.getTime() - b.date.getTime())
 
   return (
     <div className="my-6 flex flex-wrap justify-center gap-4 lg:my-12">

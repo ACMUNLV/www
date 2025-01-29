@@ -14,29 +14,30 @@ export interface Event {
 
 export const Events: Event[] = [
   {
-    title: 'SoCal Region ICPC',
-    date: new Date('2024-11-16T00:00:00'), // Nov 16
-    description:
-      'UNLV is planning to compete at the South California Internation Competitive Programming Competition (ICPC)',
-    location: 'Riverside College',
-    type: 'Competition',
+    title: 'IDE Workshop',
+    date: new Date('2025-01-29T00:00:00'),
+    startTime: new Date('2025-01-29T17:30:00'),
+    endTime: new Date('2025-01-29T20:00:00'),
+    description: `We will be assisting 135 students in setting up their IDE's as well as giving some information about ACM and competitive programming!`,
+    location: 'AEB 150',
+    type: 'Workshop',
   },
   {
     title: 'General Meeting',
-    date: new Date('2024-10-02T00:00:00'), // September 18, 2024
-    startTime: new Date('2024-10-02T17:00:00'), //5:00 - 6:00pm PSt,
-    endTime: new Date('2024-10-02T18:00:00'), //5:00 - 6:00pm PSt,
+    date: new Date('2025-02-03T00:00:00'),
+    startTime: new Date('2025-02-03T17:00:00'),
+    endTime: new Date('2025-02-03T18:30:00'),
     description: 'General Event',
-    location: 'TBE-B 361',
+    location: 'AEB 150',
     type: 'General',
   },
   {
-    title: 'Python Workshop',
-    date: new Date('2024-11-18T00:00:00'), // November 18, 2024
-    startTime: new Date('2024-11-18T17:00:00'), //5:00 - 6:00pm PSt,
-    endTime: new Date('2024-11-18T18:00:00'), //5:00 - 6:00pm PSt,
-    description: 'General Event',
-    location: 'TBE-B 361',
+    title: 'Portfolio Workshop',
+    date: new Date('2025-03-03T00:00:00'),
+    startTime: new Date('2025-03-03T17:30:00'),
+    endTime: new Date('2025-03-03T20:00:00'),
+    description: `Come learn more about HTML, CSS, and Git and by the end deploy a simple static portfolio site to GitHub pages.`,
+    location: 'AEB 150',
     type: 'Workshop',
   },
 ]
