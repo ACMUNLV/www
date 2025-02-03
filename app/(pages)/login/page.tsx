@@ -26,8 +26,10 @@ export default function LoginPage() {
   })
 
   const onSubmit = (data: LoginFormData) => {
-    if (isReset) resetPass(data, form.setError)
-    else login(data, form.setError)
+    if (isReset) {
+      form.setValue('password', '')
+      resetPass(data, form.setError)
+    } else login(data, form.setError)
   }
 
   useEffect(() => {
@@ -92,14 +94,9 @@ export default function LoginPage() {
                     name="confirmPassword"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Password</FormLabel>
+                        <FormLabel>Confirm Password</FormLabel>
                         <FormControl>
-                          <Input
-                            {...field}
-                            type="confirmPassword"
-                            placeholder="Confirm Password"
-                            className="bg-white/50"
-                          />
+                          <Input {...field} type="password" placeholder="Confirm Password" className="bg-white/50" />
                         </FormControl>
                         <FormDescription>Confirm your password to reset.</FormDescription>
                         <FormMessage>{form.formState.errors.confirmPassword?.message}</FormMessage>
