@@ -5,6 +5,7 @@ import type { Metadata } from 'next'
 import { siteMetadata, seoKeywords } from '@/data/seo-meta'
 import { ScrollToTop } from '@/components/common/scroll-to-top'
 import { Header } from '@/components/layout/header'
+import { AuthProvider } from '@/contexts/auth-context'
 
 export const metadata: Metadata = {
   keywords: seoKeywords,
@@ -32,7 +33,6 @@ export const metadata: Metadata = {
   category: 'technology',
 }
 
-
 // export const dynamic = 'force-dynamic'
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -44,9 +44,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       */}
       <head />
       <body suppressHydrationWarning className="antialiased">
-        <Header />
-        {children}
-        <ScrollToTop />
+        <AuthProvider>
+          <Header />
+          {children}
+          <ScrollToTop />
+        </AuthProvider>
       </body>
     </html>
   )
