@@ -78,7 +78,7 @@ const EventsEdit = ({ events, setOpen, onEventChange }: EventsEditProps) => {
 
       form.reset()
       setOpen(false)
-      onEventChange() // Trigger a refetch of events
+      onEventChange()
     } catch (error) {
       console.error('Error editing event:', error)
     }
@@ -86,7 +86,7 @@ const EventsEdit = ({ events, setOpen, onEventChange }: EventsEditProps) => {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+      <form onSubmit={form.handleSubmit(onSubmit)} className="animate-fade-in  space-y-4">
         <FormField
           control={form.control}
           name="id"

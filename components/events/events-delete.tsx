@@ -53,7 +53,7 @@ const EventsDelete = ({ events, setOpen, onEventChange }: EventsDeleteProps) => 
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+      <form onSubmit={form.handleSubmit(onSubmit)} className="animate-fade-in  space-y-4">
         {/* Select Event */}
         <FormField
           control={form.control}
@@ -97,7 +97,7 @@ const EventsDelete = ({ events, setOpen, onEventChange }: EventsDeleteProps) => 
         />
 
         {/* Submit Button */}
-        <Button type="submit"  className='bg-primary'>
+        <Button type="submit" className="bg-primary">
           Delete Event
         </Button>
       </form>

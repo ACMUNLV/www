@@ -141,6 +141,17 @@ module.exports = {
           5: 'hsl(var(--chart-5))',
         },
       },
+      keyframes: {
+        'fade-in': {
+          from: {
+            opacity: 0,
+          },
+          to: {
+            opacity: 100,
+          },
+        },
+      },
+      animation: { 'fade-in': 'fade-in 150ms ease-in' },
       rotate: {
         360: '360deg',
         720: '720deg',

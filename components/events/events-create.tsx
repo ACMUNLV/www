@@ -60,7 +60,7 @@ const EventsCreate = ({ setOpen, onEventChange }: EventsCreateProps) => {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-2 animate-fade-in">
         <FormField
           control={form.control}
           name="title"
@@ -74,7 +74,7 @@ const EventsCreate = ({ setOpen, onEventChange }: EventsCreateProps) => {
             </FormItem>
           )}
         />
-        
+
         <div className="flex space-x-4">
           <FormField
             control={form.control}
