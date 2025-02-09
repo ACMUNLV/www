@@ -60,13 +60,13 @@ const EventsCreate = ({ setOpen, onEventChange }: EventsCreateProps) => {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-2 animate-fade-in">
+      <form onSubmit={form.handleSubmit(onSubmit)} className="animate-fade-in space-y-2">
         <FormField
           control={form.control}
           name="title"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Title</FormLabel>
+              <FormLabel>Title *</FormLabel>
               <FormControl>
                 <Input placeholder="Event Title" {...field} />
               </FormControl>
@@ -81,7 +81,7 @@ const EventsCreate = ({ setOpen, onEventChange }: EventsCreateProps) => {
             name="date"
             render={({ field }) => (
               <FormItem className="flex-1">
-                <FormLabel>Date</FormLabel>
+                <FormLabel>Date *</FormLabel>
                 <FormControl>
                   <Input type="date" {...field} />
                 </FormControl>
@@ -96,7 +96,7 @@ const EventsCreate = ({ setOpen, onEventChange }: EventsCreateProps) => {
               <FormItem className="flex-1">
                 <FormLabel>Location</FormLabel>
                 <FormControl>
-                  <Input placeholder="Event Location (optional)" {...field} />
+                  <Input placeholder="AEB 150" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -138,7 +138,7 @@ const EventsCreate = ({ setOpen, onEventChange }: EventsCreateProps) => {
           name="description"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Description</FormLabel>
+              <FormLabel>Description *</FormLabel>
               <FormControl>
                 <Textarea placeholder="Event Description" {...field} />
               </FormControl>
@@ -152,7 +152,7 @@ const EventsCreate = ({ setOpen, onEventChange }: EventsCreateProps) => {
           name="type"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Type</FormLabel>
+              <FormLabel>Type *</FormLabel>
               <Select onValueChange={field.onChange} defaultValue={field.value}>
                 <FormControl>
                   <SelectTrigger>

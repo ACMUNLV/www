@@ -24,7 +24,11 @@ export const EventsFilter = () => {
 
   useEffect(() => {
     fetchEvents()
-  }, [selectedType]) // Added selectedType to dependencies
+  }, [])
+
+  useEffect(() => {
+    if (!selectedType) setSelectedType('All')
+  }, [selectedType])
 
   const handleToggleChange = (value: string) => {
     setSelectedType(value as 'General' | 'Competition' | 'Workshop' | 'All')

@@ -125,7 +125,7 @@ const EventsEdit = ({ events, setOpen, onEventChange }: EventsEditProps) => {
               name="title"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Title</FormLabel>
+                  <FormLabel>Title *</FormLabel>
                   <FormControl>
                     <Input placeholder="Event Title" {...field} />
                   </FormControl>
@@ -140,7 +140,7 @@ const EventsEdit = ({ events, setOpen, onEventChange }: EventsEditProps) => {
                 name="date"
                 render={({ field }) => (
                   <FormItem className="flex-1">
-                    <FormLabel>Date</FormLabel>
+                    <FormLabel>Date *</FormLabel>
                     <FormControl>
                       <Input type="date" {...field} />
                     </FormControl>
@@ -197,7 +197,7 @@ const EventsEdit = ({ events, setOpen, onEventChange }: EventsEditProps) => {
               name="description"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Description</FormLabel>
+                  <FormLabel>Description *</FormLabel>
                   <FormControl>
                     <Textarea placeholder="Event Description" {...field} />
                   </FormControl>
@@ -211,7 +211,7 @@ const EventsEdit = ({ events, setOpen, onEventChange }: EventsEditProps) => {
               name="type"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Type</FormLabel>
+                  <FormLabel>Type *</FormLabel>
                   <Select onValueChange={field.onChange} value={field.value}>
                     <FormControl>
                       <SelectTrigger>

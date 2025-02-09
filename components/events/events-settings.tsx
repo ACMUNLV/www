@@ -55,4 +55,4 @@ const EventsSettings = ({ events, onEventChange }: EventsEditProps) => {
   )
 }
 
-export default EventsSettings  
+export default EventsSettings
