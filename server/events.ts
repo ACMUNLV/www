@@ -75,3 +75,17 @@ export async function deleteEvent(eventId: number) {
 export async function getEvents() {
   return await db.event.findMany()
 }
+
+export async function getUpcoming() {
+  return await db.event.findMany({
+    where: {
+      date: {
+        gte: new Date(),
+      },
+    },
+    orderBy: {
+      date: 'asc',
+    },
+    take: 5,
+  })
+}

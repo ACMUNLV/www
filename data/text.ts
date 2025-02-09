@@ -122,6 +122,10 @@ export const texts = {
       },
     },
   },
+  upcoming: {
+    title: 'Upcoming Events',
+    description: 'See What’s Happening Soon',
+  },
   members: {
     title: 'Meet our team!',
     description: `Our ACM club consists of dedicated and innovative students passionate about advancing computing as a science and a profession.`,

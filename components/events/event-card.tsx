@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button'
 import { Event } from '@prisma/client'
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from '@/components/ui/card'
+import { Calendar } from 'lucide-react'
 
 interface EventCardProps {
   event: Event
@@ -35,18 +36,25 @@ export const EventCard = ({ event }: EventCardProps) => {
 
   return (
     <Card className="w-[425px] transition hover:scale-105">
-      <CardHeader>
+      <CardHeader className="pb-3">
         <CardTitle>{event.title}</CardTitle>
         <CardDescription>
-          {`${formattedDate} | ${dayOfWeek} ${event.startTime ? `${formattedStartTime} - ${formattedEndTime}` : ''}`}
+          <span className="grid grid-cols-2 grid-rows-2">
+            <span className="col-start-1 row-start-1">{`${formattedDate} | ${dayOfWeek}`}</span>
+            <span className="col-start-2 row-start-1 ml-auto">{`${event.startTime ? `${formattedStartTime} - ${formattedEndTime}` : ''}`}</span>
+            <span className="col-start-2 row-start-2 ml-auto">{event.location}</span>
+          </span>
         </CardDescription>
       </CardHeader>
       <CardContent>
-        <p>{event.description}</p>
+        <span>{event.description}</span>
       </CardContent>
       <CardFooter className="flex justify-between">
         <a href={googleCalendarUrl} target="_blank" rel="noopener noreferrer">
-          <Button>Add to Google Calendar</Button>
+          <Button>
+            <Calendar className="mr-2 h-5 w-5" />
+            Add to Google Calendar
+          </Button>
         </a>
       </CardFooter>
     </Card>

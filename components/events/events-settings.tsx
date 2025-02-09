@@ -21,10 +21,8 @@ const EventsSettings = ({ events, onEventChange }: EventsEditProps) => {
 
   return (
     <Dialog open={open} onOpenChange={setOpen}>
-      <DialogTrigger>
-        <Button size={'icon'}>
-          <Settings />
-        </Button>
+      <DialogTrigger className="inline-flex h-10 w-10 items-center justify-center whitespace-nowrap rounded-lg bg-primary text-sm font-medium text-primary-foreground ring-offset-background transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50">
+        <Settings />
       </DialogTrigger>
       <DialogContent>
         <DialogHeader>

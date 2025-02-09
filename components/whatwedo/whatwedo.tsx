@@ -1,7 +1,7 @@
 'use client'
 
 import InfoCard from '@/components/whatwedo/info-card'
-import { WhatWeDoWrapper } from '@/components/whatwedo/wrapper'
+import { SectionWrapper } from '@/components/whatwedo/wrapper'
 import { texts } from '@/data/text'
 import { useEffect, useRef } from 'react'
 
@@ -19,7 +19,7 @@ export default function WhatWedo() {
   }, [])
 
   return (
-    <WhatWeDoWrapper>
+    <SectionWrapper>
       {/* header */}
       <div className="mx-auto max-w-3xl pb-12 text-center md:pb-16">
         <h1 className="h2 mb-4" data-aos="fade-up" data-aos-delay="150">
@@ -51,6 +51,6 @@ export default function WhatWedo() {
           description={texts.whatwedo.tabs.second.description}
         />
       </div>
-    </WhatWeDoWrapper>
+    </SectionWrapper>
   )
 }
