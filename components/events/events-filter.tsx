@@ -4,20 +4,31 @@ import { useEffect, useState } from 'react'
 import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group'
 import { EventsContainer } from './events-container'
-
+import type { Event } from '@prisma/client'
+import { useAuth } from '@/hooks/use-auth'
+import EventsSettings from './events-settings'
+import { getEvents } from '@/server/events'
 
 export const EventsFilter = () => {
-  const [selectedType, setSelectedType] = useState< 'General' | 'Competition' | 'Workshop' | 'All'>('All')
+  const { user } = useAuth()
+  const [selectedType, setSelectedType] = useState<'General' | 'Competition' | 'Workshop' | 'All'>('All')
+  const [loading, setLoading] = useState<boolean>(true)
+  const [events, setEvents] = useState<Event[]>([])
+
+  const fetchEvents = async () => {
+    setLoading(true)
+    const fetchedEvents = await getEvents()
+    setEvents(fetchedEvents)
+    setLoading(false)
+  }
+
+  useEffect(() => {
+    fetchEvents()
+  }, [selectedType]) // Added selectedType to dependencies
 
   const handleToggleChange = (value: string) => {
     setSelectedType(value as 'General' | 'Competition' | 'Workshop' | 'All')
   }
-
-   useEffect(() => {
-     if (!selectedType) {
-       setSelectedType('All')
-     }
-   }, [selectedType])
 
   return (
     <>
@@ -37,12 +48,13 @@ export const EventsFilter = () => {
             <ToggleGroupItem value="All" aria-label="Show all events" className="font-semibold">
               All
             </ToggleGroupItem>
+            {user && <EventsSettings events={events} onEventChange={fetchEvents} />}
           </ToggleGroup>
         </div>
         <div className="lg:hidden">
           <Select value={selectedType} onValueChange={handleToggleChange}>
             <SelectTrigger className="font-semibold">
-              <SelectValue placeholder="All"/>
+              <SelectValue placeholder="All" />
             </SelectTrigger>
             <SelectContent>
               <SelectGroup>
@@ -63,7 +75,7 @@ export const EventsFilter = () => {
           </Select>
         </div>
       </div>
-      <EventsContainer selectedType={selectedType} />
+      <EventsContainer selectedType={selectedType} events={events} loading={loading} />
     </>
   )
 }

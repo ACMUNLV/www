@@ -16,3 +16,29 @@ model User {
   name     String?
   password String
 }
+
+model Member {
+  name     String @unique
+  pronouns String?
+  school   String
+  src      String
+  link     String
+  title    String
+}
+
+model Event {
+  id          Int       @id @default(autoincrement())
+  title       String
+  date        DateTime
+  startTime   DateTime? 
+  endTime     DateTime?
+  description String
+  location    String?
+  type        EventType
+}
+
+enum EventType {
+  General
+  Competition
+  Workshop
+}
