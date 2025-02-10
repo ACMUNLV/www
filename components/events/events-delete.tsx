@@ -14,9 +14,12 @@ import type { Event } from '@prisma/client'
 
 const eventSchema = z.object({
   event: z.string().min(1, { message: 'Event selection is required.' }),
-  confirm: z.string().refine((value) => value === 'confirm', {
-    message: "Please type 'confirm' to proceed with the deletion.",
-  }),
+  confirm: z
+    .string()
+    .default('')
+    .refine((value) => value === 'confirm', {
+      message: "Please type 'confirm' to proceed with the deletion.",
+    }),
 })
 
 interface EventsDeleteProps {
@@ -30,7 +33,6 @@ const EventsDelete = ({ events, setOpen, onEventChange }: EventsDeleteProps) => 
     resolver: zodResolver(eventSchema),
     defaultValues: {
       event: '',
-      confirm: '',
     },
   })
 
@@ -87,7 +89,7 @@ const EventsDelete = ({ events, setOpen, onEventChange }: EventsDeleteProps) => 
           name="confirm"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Type 'confirm' to Delete</FormLabel>
+              <FormLabel>Type &apos;confirm&apos; to Delete</FormLabel>
               <FormControl>
                 <Input placeholder="confirm" {...field} />
               </FormControl>

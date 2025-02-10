@@ -26,8 +26,12 @@ export const UpcomingEvents = () => {
     <SectionWrapper>
       {/* header */}
       <div className="mx-auto max-w-3xl pb-6 text-center md:pb-8">
-        <h1 className="h2 mb-4">{texts.upcoming.title}</h1>
-        <p className="text-xl text-body-color dark:text-slate-300">{texts.upcoming.description}</p>
+        <h1 className="h2 mb-4" data-aos="fade-up" data-aos-delay="150">
+          {texts.upcoming.title}
+        </h1>
+        <p className="text-xl text-body-color dark:text-slate-300" data-aos="fade-up" data-aos-delay="150">
+          {texts.upcoming.description}
+        </p>
       </div>
       <EventsContainer selectedType={'All'} events={events} loading={loading} skeleton />
     </SectionWrapper>
