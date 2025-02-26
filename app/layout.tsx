@@ -21,6 +21,20 @@ export const metadata: Metadata = {
     siteName: 'unlv-acm',
     title: siteMetadata.title,
     description: siteMetadata.description,
+    images: [
+      {
+        url: '/img/logo/logo-bordered.png',
+        width: 1125,
+        height: 1125,
+        alt: 'ACM UNLV Logo',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary', 
+    title: siteMetadata.title,
+    description: siteMetadata.description,
+    images: ['/images/logo-bordered.png'],
   },
   alternates: {
     canonical: './',
