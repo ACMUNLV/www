@@ -34,7 +34,7 @@ export const members: Person[] = [
     school: 'University of Nevada, Las Vegas',
     src: '/img/members/athanasios-tassiadamis.jpg',
     link: 'https://www.linkedin.com/in/athanasios-t-8a17b4294/',
-    title: 'Training Manager',
+    title: 'Training Officer',
   },
   {
     name: 'Thien Nguyen',
@@ -50,11 +50,25 @@ export const members: Person[] = [
     link: 'https://danielmamuza.com/',
     title: 'Webmaster',
   },
-  // {
-  //   name: 'Dorian Akhavan',
-  //   school: 'University of Nevada, Las Vegas',
-  //   src: '/img/members/dorian-akhavan.jpeg',
-  //   link: 'https://www.linkedin.com/in/dorian-akhavan-516b48250/',
-  //   title: 'Officer',
-  // },
+  {
+    name: 'Dorian Akhavan',
+    school: 'University of Nevada, Las Vegas',
+    src: '/img/members/dorian-akhavan.jpeg',
+    link: 'https://www.linkedin.com/in/dorian-akhavan-516b48250/',
+    title: 'Officer',
+  },
+  {
+    name: 'Jared Smith',
+    school: 'University of Nevada, Las Vegas',
+    src: '/img/members/jared-smith.png',
+    link: 'https://www.linkedin.com/in/jaredashaunsmith/',
+    title: 'Officer',
+  },
+  {
+    name: 'Manjot Sandhu',
+    school: 'University of Nevada, Las Vegas',
+    src: '/img/members/jared-smith.png',
+    link: 'https://www.linkedin.com/in/manjot-sandhu-b4a842290',
+    title: 'Training Officer',
+  },
 ]
