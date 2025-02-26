@@ -24,17 +24,15 @@ export const metadata: Metadata = {
     images: [
       {
         url: '/img/logo/logo-bordered.png',
-        width: 1125,
-        height: 1125,
         alt: 'ACM UNLV Logo',
       },
     ],
   },
   twitter: {
-    card: 'summary_large_image', 
+    card: 'summary_large_image',
     title: siteMetadata.title,
     description: siteMetadata.description,
-    images: ['/images/logo-bordered.png'],
+    images: ['/img/logo/logo-bordered.png'],
   },
   alternates: {
     canonical: './',
