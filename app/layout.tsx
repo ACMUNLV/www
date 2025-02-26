@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    card: 'summary', 
+    card: 'summary_large_image', 
     title: siteMetadata.title,
     description: siteMetadata.description,
     images: ['/images/logo-bordered.png'],
