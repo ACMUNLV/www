@@ -13,7 +13,7 @@ export default function DefaultLayout({ children }: { children: React.ReactNode 
       disable: 'phone',
       easing: 'ease-out-sine',
     })
-  })
+  }, [])
 
   return (
     <>

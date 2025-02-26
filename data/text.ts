@@ -52,7 +52,7 @@ export const texts = {
       ],
       images: [
         {
-          src: '/img/about-page/icpc-preparation.svg',
+          src: '/img/about-page/icpc-preparation.jpg',
           alt: 'ACM UNLV Members working on ICPC problems in teams',
           width: 520,
           height: 384,
@@ -64,7 +64,7 @@ export const texts = {
           height: 384,
         },
         {
-          src: '/img/about-page/professional-development.svg',
+          src: '/img/about-page/professional-development.jpg',
           alt: 'ACM Professional Development',
           width: 520,
           height: 384,
@@ -79,7 +79,7 @@ export const texts = {
             or contributing to open-source projects. Follow us on social media, join our Discord server, and explore leadership
             opportunities to connect with peers and build skills in a collaborative environment.
         `,
-      src: '/img/about-page/join-us.svg',
+      src: '/img/about-page/join-us.jpg',
       alt: 'First ACM Meeting Group Photo',
     },
   },
