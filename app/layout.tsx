@@ -24,6 +24,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: '/img/logo/logo-bordered.png',
+        width: 1125,
+        height: 1125,
         alt: 'ACM UNLV Logo',
       },
     ],
@@ -32,7 +34,14 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: siteMetadata.title,
     description: siteMetadata.description,
-    images: ['/img/logo/logo-bordered.png'],
+    images: [
+      {
+        url: '/img/logo/logo-bordered.png',
+        width: 1125,
+        height: 1125,
+        alt: 'ACM UNLV Logo',
+      },
+    ],
   },
   alternates: {
     canonical: './',
