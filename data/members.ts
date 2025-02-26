@@ -67,7 +67,7 @@ export const members: Person[] = [
   {
     name: 'Manjot Sandhu',
     school: 'University of Nevada, Las Vegas',
-    src: '/img/members/manjot-sandhu.png',
+    src: '/img/members/manjot-sandhu.jpeg',
     link: 'https://www.linkedin.com/in/manjot-sandhu-b4a842290',
     title: 'Training Officer',
   },
