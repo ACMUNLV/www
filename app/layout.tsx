@@ -4,6 +4,7 @@ import type { Metadata } from 'next'
 import { siteMetadata, seoKeywords } from '@/data/seo-meta'
 import { ScrollToTop } from '@/components/common/scroll-to-top'
 import { Header } from '@/components/layout/header'
+import { PostHogProvider } from '@/components/providers/posthog'
 
 export const metadata: Metadata = {
   keywords: seoKeywords,
@@ -64,9 +65,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       */}
       <head />
       <body suppressHydrationWarning className="antialiased">
-        <Header />
-        {children}
-        <ScrollToTop />
+        <PostHogProvider>
+          <Header />
+          {children}
+          <ScrollToTop />
+        </PostHogProvider>
       </body>
     </html>
   )
