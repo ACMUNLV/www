@@ -17,7 +17,7 @@ export const Events: Event[] = [
     title: 'Code-a-thon with GWC',
     date: new Date('2025-04-30T00:00:00'),
     startTime: new Date('2025-04-30T17:30:00'),
-    endTime: new Date('2025-04-30T00:00:00'),
+    endTime: new Date('2025-04-30T20:00:00'),
     description: `Join us for a HackerRank style Code-a-thon in collaboration with GWC! Get ready to test your coding skills!`,
     location: `AEB Flexatorium`,
     type: 'Competition',
