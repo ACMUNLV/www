@@ -17,6 +17,8 @@ import {
 } from '@/components/ui/navigation-menu'
 import { Button } from '@/components/ui/button'
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
+import { ExternalLink, Users } from 'lucide-react'
+import { texts } from '@/data/text'
 
 export const Header = () => {
   const pathname = usePathname()
@@ -75,7 +77,20 @@ export const Header = () => {
                 </ul>
               </NavigationMenuContent>
             </NavigationMenuItem>
-            {/* Button */}
+            {/* Officer Interest Button */}
+            <NavigationMenuItem>
+              <Button variant="outline" className="mr-2">
+                <NavigationMenuLink
+                  href={texts.interestForm.form.url}
+                  target="_blank"
+                  className="font-bold flex items-center"
+                >
+                  <Users className="mr-2 h-4 w-4" />
+                  Officer Interest
+                </NavigationMenuLink>
+              </Button>
+            </NavigationMenuItem>
+            {/* Join Us Button */}
             <NavigationMenuItem>
               <Button>
                 <NavigationMenuLink
@@ -117,8 +132,14 @@ export const Header = () => {
                   ))}
                 </div>
               </div>
-              <Link href="https://involvementcenter.unlv.edu/organization/unlv-acm" className="mt-4" target="_blank">
-                <Button className=" w-full" variant="default" size="lg">
+              <Link href={texts.interestForm.form.url} className="mt-4" target="_blank">
+                <Button className="w-full mb-2" variant="outline" size="lg">
+                  <Users className="mr-2 h-4 w-4" />
+                  Officer Interest
+                </Button>
+              </Link>
+              <Link href="https://involvementcenter.unlv.edu/organization/unlv-acm" className="mt-2" target="_blank">
+                <Button className="w-full" variant="default" size="lg">
                   Join Us!
                 </Button>
               </Link>

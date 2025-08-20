@@ -130,4 +130,18 @@ export const texts = {
     gaslighting: `Our school chapter UNLV ACM works to connect student by hosting workshops,
       lectures, attending seminars, and competing in regional coding competitions.`,
   },
+  interestForm: {
+    // change whenever you (whoever this might be in the future) wants to recruit officers
+    showPopup: true,
+    popup: {
+      title: 'Welcome to ACM UNLV!',
+      description: `Interested in becoming an officer? We're always looking for passionate students to join our leadership team!`,
+      acceptButtonText: 'Fill Out Officer Interest Form',
+      maybeLaterButtonText: 'Maybe Later',
+      maybeLaterText: 'You can always access this form later from our website',
+    },
+    form: {
+      url: 'https://forms.gle/HRjneTyddAuGcjbn9',
+    },
+  },
 }

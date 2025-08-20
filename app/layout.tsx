@@ -5,6 +5,7 @@ import { siteMetadata, seoKeywords } from '@/data/seo-meta'
 import { ScrollToTop } from '@/components/common/scroll-to-top'
 import { Header } from '@/components/layout/header'
 import { PostHogProvider } from '@/components/providers/posthog'
+import { WelcomePopup } from '@/components/common/welcome-popup'
 
 export const metadata: Metadata = {
   keywords: seoKeywords,
@@ -69,6 +70,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Header />
           {children}
           <ScrollToTop />
+          <WelcomePopup />
         </PostHogProvider>
       </body>
     </html>
