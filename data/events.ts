@@ -14,6 +14,22 @@ export interface Event {
 
 export const Events: Event[] = [
   {
+    title: 'ICPC South Calfornia Regional',
+    date: new Date('2025-11-15T00:00:00'),
+    description: `The ICPC South California Regional is a competitive programming contest where ACM UNLV members team up to solve challenging algorithmic problems under time pressure.`,
+    location: `Riverside, CA`,
+    type: 'Competition',
+  },
+  {
+    title: "Google's Technical Interview Workshop",
+    date: new Date('2025-09-23T00:00:00'),
+    startTime: new Date('2025-09-23T17:30:00'),
+    endTime: new Date('2025-09-23T19:30:00'),
+    description: `The workshop focuses on technical interviews and is open to all computer science, computer engineering, math, and related majors. Food will be provided before the presentation.`,
+    location: `AEB Flexatorium`,
+    type: 'Workshop',
+  },
+  {
     title: 'Code-a-thon with GWC',
     date: new Date('2025-04-30T00:00:00'),
     startTime: new Date('2025-04-30T17:30:00'),
