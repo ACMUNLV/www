@@ -15,12 +15,14 @@ export async function PATCH(req: Request, { params }: { params: { id: string } }
     if (eventDate && typeof startTime === 'string' && startTime) {
       startDateTime = new Date(eventDate)
       const [h, m] = startTime.split(':')
-      startDateTime.setHours(Number.parseInt(h!, 10), Number.parseInt(m!, 10))
+      // Use UTC to avoid server timezone drift
+      startDateTime.setUTCHours(Number.parseInt(h!, 10), Number.parseInt(m!, 10), 0, 0)
     }
     if (eventDate && typeof endTime === 'string' && endTime) {
       endDateTime = new Date(eventDate)
       const [h, m] = endTime.split(':')
-      endDateTime.setHours(Number.parseInt(h!, 10), Number.parseInt(m!, 10))
+      // Use UTC to avoid server timezone drift
+      endDateTime.setUTCHours(Number.parseInt(h!, 10), Number.parseInt(m!, 10), 0, 0)
     }
 
     const updated = await db.event.update({

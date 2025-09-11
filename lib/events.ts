@@ -18,7 +18,8 @@ export function combineDateAndTime(dateInput: string | Date | null | undefined, 
   if (Number.isNaN(base.getTime())) return null
   const [h, m] = timeHHmm.split(':')
   const combined = new Date(base)
-  combined.setHours(Number.parseInt(h!, 10), Number.parseInt(m!, 10), 0, 0)
+  // Use UTC to avoid environment-dependent timezone shifts (e.g., PM2 server tz)
+  combined.setUTCHours(Number.parseInt(h!, 10), Number.parseInt(m!, 10), 0, 0)
   return combined
 }
 

@@ -23,6 +23,7 @@ const formatTime = (time: Date) =>
     hour: 'numeric',
     minute: 'numeric',
     hour12: true,
+    timeZone: 'UTC',
   }).format(time)
 
 interface EventCardProps {
