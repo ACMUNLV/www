@@ -28,7 +28,7 @@ export function emptyFormValues(): EventFormValues {
 export function toFormValues(e: Event): EventFormValues {
   return {
     title: e.title,
-    date: e.date.toISOString().split('T')[0],
+    date: e.date.toISOString().split('T')[0] ?? '',
     startTime: e.startTime ? e.startTime.toTimeString().slice(0, 5) : '',
     endTime: e.endTime ? e.endTime.toTimeString().slice(0, 5) : '',
     description: e.description,

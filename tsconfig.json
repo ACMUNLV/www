@@ -19,6 +19,15 @@
     "noUncheckedIndexedAccess": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": [".eslintrc.json", "next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.cjs", "**/*.mjs", ".next/types/**/*.ts", "components/hero/decoration.tsx-1"],
-  "exclude": ["node_modules"]
+  "include": [
+    ".eslintrc.json",
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.cjs",
+    "**/*.mjs",
+    ".next/types/**/*.ts",
+    "components/hero/decoration.tsx-1"
+  ],
+  "exclude": ["node_modules", "generated/prisma/**"]
 }
