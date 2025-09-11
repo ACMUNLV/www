@@ -9,6 +9,8 @@ import { useAuth } from '@/contexts/auth'
 import EventsSettings from '@/components/events/events-settings'
 import { parseEventsArray } from '@/lib/events'
 
+const EventTypes = ['General', 'Competition', 'Workshop', 'All']
+
 export const EventsFilter = () => {
   const { user } = useAuth()
 
@@ -16,8 +18,8 @@ export const EventsFilter = () => {
   const [loading, setLoading] = useState<boolean>(true)
   const [events, setEvents] = useState<Event[]>([])
 
-  const fetchEvents = async () => {
-    setLoading(true)
+  const fetchEvents = async (showLoading: boolean = true) => {
+    if (showLoading) setLoading(true)
     try {
       const res = await fetch('/api/events', { cache: 'no-store' })
       const data = await res.json()
@@ -25,13 +27,13 @@ export const EventsFilter = () => {
     } catch (e) {
       console.error('Failed to fetch events', e)
     } finally {
-      setLoading(false)
+      if (showLoading) setLoading(false)
     }
   }
 
   useEffect(() => {
-    fetchEvents()
-  }, [selectedType])
+    fetchEvents(true)
+  }, [])
 
   const handleToggleChange = (value: string) => {
     setSelectedType(value as 'General' | 'Competition' | 'Workshop' | 'All')
@@ -43,18 +45,11 @@ export const EventsFilter = () => {
         <h1 className="text-2xl md:text-5xl">Events</h1>
         <div className="hidden lg:flex">
           <ToggleGroup type="single" variant="outline" value={selectedType} onValueChange={handleToggleChange}>
-            <ToggleGroupItem value="General" aria-label="Toggle general" className="font-semibold">
-              General
-            </ToggleGroupItem>
-            <ToggleGroupItem value="Competition" aria-label="Toggle competition" className="font-semibold">
-              Competition
-            </ToggleGroupItem>
-            <ToggleGroupItem value="Workshop" aria-label="Toggle workshops" className="font-semibold">
-              Workshops
-            </ToggleGroupItem>
-            <ToggleGroupItem value="All" aria-label="Show all events" className="font-semibold">
-              All
-            </ToggleGroupItem>
+            {EventTypes.map((type) => (
+              <ToggleGroupItem key={type} value={type} aria-label={`Toggle ${type}`} className="font-semibold">
+                {type}
+              </ToggleGroupItem>
+            ))}
             {user && <EventsSettings events={events} onEventChange={fetchEvents} />}
           </ToggleGroup>
         </div>
@@ -65,24 +60,17 @@ export const EventsFilter = () => {
             </SelectTrigger>
             <SelectContent>
               <SelectGroup>
-                <SelectItem value="All" className="font-semibold">
-                  All
-                </SelectItem>
-                <SelectItem value="General" className="font-semibold">
-                  General
-                </SelectItem>
-                <SelectItem value="Competition" className="font-semibold">
-                  Competition
-                </SelectItem>
-                <SelectItem value="Workshop" className="font-semibold">
-                  Workshops
-                </SelectItem>
+                {EventTypes.map((type) => (
+                  <SelectItem key={type} value={type} className="font-semibold">
+                    {type}
+                  </SelectItem>
+                ))}
               </SelectGroup>
             </SelectContent>
           </Select>
         </div>
       </div>
-      <EventsContainer selectedType={selectedType} events={events} loading={loading} />
+      <EventsContainer selectedType={selectedType} events={events} loading={loading} onChange={() => fetchEvents(false)} />
     </>
   )
 }

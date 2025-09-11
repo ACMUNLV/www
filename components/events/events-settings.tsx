@@ -8,7 +8,7 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from '../ui/tabs'
 import EventsCreate from './event-create'
 import EventsDelete from './event-delete'
 import type { Event } from '@/generated/prisma'
-import EventsEdit from './event-edit'
+import EventsEdit from './edit/events-edit'
 
 interface EventsEditProps {
   events: Event[]
@@ -21,7 +21,7 @@ const EventsSettings = ({ events, onEventChange }: EventsEditProps) => {
 
   return (
     <Dialog open={open} onOpenChange={setOpen}>
-      <DialogTrigger asChild> 
+      <DialogTrigger asChild>
         <Button size={'icon'}>
           <Settings />
         </Button>

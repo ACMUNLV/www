@@ -5,6 +5,7 @@ import { useAuth } from '@/contexts/auth'
 import { useForm } from 'react-hook-form'
 import { z } from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
+import Link from 'next/link'
 
 import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
@@ -60,9 +61,14 @@ export default function LoginPage() {
       {user ? (
         <div className="container my-24 flex max-w-96 flex-col items-center justify-center rounded-xl bg-primary/50 py-10 shadow-xl">
           <h3 className="mb-4 text-xl font-semibold">Logged in as Admin</h3>
-          <Button onClick={() => logout()} className="w-full bg-red-600 hover:bg-red-700">
-            Logout
-          </Button>
+          <div className="flex flex-col items-center justify-center gap-3">
+            <Button asChild variant="outline" className="w-full">
+              <Link href="/events">Edit Events</Link>
+            </Button>
+            <Button onClick={() => logout()} className="w-full bg-red-600 hover:bg-red-700">
+              Logout
+            </Button>
+          </div>
         </div>
       ) : (
         <Form {...form}>
