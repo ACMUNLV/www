@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { EventsFilter } from '@/components/events/events-filter'
-import { EventsCalendar } from '@/components/events/events-calendar'
+// import { EventsCalendar } from '@/components/events/events-calendar'
 
 
 export const metadata: Metadata = {
