@@ -14,7 +14,7 @@
     "incremental": true,
     "baseUrl": ".",
     "module": "esnext",
-    "paths": { "@/*": ["./*"] },
+    "paths": { "@/*": ["./src/*"], "@/generated/*": ["./generated/*"] },
     "plugins": [{ "name": "next" }],
     "noUncheckedIndexedAccess": true,
     "forceConsistentCasingInFileNames": true
