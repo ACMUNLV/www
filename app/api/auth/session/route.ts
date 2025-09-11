@@ -22,6 +22,7 @@ export async function GET() {
     })
   } catch {
     // expired/invalid -> treat as logged out
+    cookies().delete('acm_session')
     return NextResponse.json({ ok: false }, { status: 200 })
   }
 }

@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button'
-import { Event } from '@/data/events'
+import { Event } from '@/generated/prisma'
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from '@/components/ui/card'
 
 interface EventCardProps {
@@ -12,12 +12,13 @@ export const EventCard = ({ event }: EventCardProps) => {
       month: 'long',
       day: 'numeric',
       year: 'numeric',
+      timeZone: 'UTC',
     }).format(date)
 
   const dayOfWeek = new Intl.DateTimeFormat('en-US', {
     weekday: 'long',
-  })
-    .format(event.date)
+    timeZone: 'UTC',
+  }).format(event.date)
 
   const formatTime = (time: Date) =>
     new Intl.DateTimeFormat('en-US', {
@@ -32,9 +33,8 @@ export const EventCard = ({ event }: EventCardProps) => {
 
   const googleCalendarUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(event.title)}&dates=${event.startTime ? `${event.startTime.toISOString().replace(/[-:.]/g, '')}Z/${event.endTime ? event.endTime.toISOString().replace(/[-:.]/g, '') + 'Z' : ''}` : ''}&details=${encodeURIComponent(event.description)}&location=${encodeURIComponent(event.location || '')}`
 
-
   return (
-    <Card className="w-[425px] hover:scale-105 transition">
+    <Card className="w-[425px] transition hover:scale-105">
       <CardHeader>
         <CardTitle>{event.title}</CardTitle>
         <CardDescription>

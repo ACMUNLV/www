@@ -61,7 +61,6 @@ export async function POST(req: Request) {
   }
 
   const validUser = username && process.env.ACM_SHARED_USERNAME && username === process.env.ACM_SHARED_USERNAME
-
   const validPass = password && process.env.ACM_SHARED_SECRET && password === process.env.ACM_SHARED_SECRET
 
   if (!validUser || !validPass) {

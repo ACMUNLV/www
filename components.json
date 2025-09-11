@@ -15,7 +15,8 @@
     "utils": "@/lib/utils",
     "ui": "@/components/ui",
     "lib": "@/lib",
-    "hooks": "@/hooks",
-    "magicui": "@/components/magicui"
+    "contexts": "@/contexts",
+    "magicui": "@/components/magicui",
+    "generated": "@/generated"
   }
 }
