@@ -125,6 +125,9 @@ export const texts = {
   members: {
     title: 'Meet our team!',
     description: `Our ACM club consists of dedicated and innovative students passionate about advancing computing as a science and a profession.`,
+    interestForm: {
+      title: 'Interested in becoming an officer?',
+    },
   },
   footer: {
     gaslighting: `Our school chapter UNLV ACM works to connect student by hosting workshops,

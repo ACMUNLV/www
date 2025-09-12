@@ -1,7 +1,9 @@
 import Image from 'next/image'
 import { members } from '@/data/members'
-import { Badge } from '@/components/ui/badge'
 import { texts } from '@/data/text'
+import { Button } from '../ui/button'
+import { Users } from 'lucide-react'
+import Link from 'next/link'
 
 export default function MemberList() {
   return (
@@ -14,7 +16,7 @@ export default function MemberList() {
       </div>
 
       <div
-        className="mx-auto grid max-w-sm items-start gap-8 md:max-w-2xl md:grid-cols-2 lg:max-w-none lg:grid-cols-3 lg:gap-16"
+        className="mx-auto grid max-w-sm items-start gap-8 md:max-w-2xl md:grid-cols-2 lg:max-w-none lg:grid-cols-3 lg:gap-12"
         data-aos-id-blocks
       >
         {members.map((person, index) => (
@@ -45,13 +47,22 @@ export default function MemberList() {
                 {person.title}
               </span>
             )}
-
-            <span className="mb-2 text-center">
-              {person.school} {/* School */}
-            </span>
-
           </div>
         ))}
+      </div>
+
+      <div
+        className="mx-auto mt-16 flex max-w-3xl flex-col items-center pb-12 "
+        data-aos="fade-up"
+        data-aos-delay="150"
+      >
+        <h4 className="h4 mb-4">{texts.members.interestForm.title}</h4>
+        <Button asChild className="w-fit">
+          <Link href={texts.interestForm.form.url} target="_blank" className="flex items-center font-bold">
+            <Users className="mr-2 h-4 w-4" />
+            Officer Interest Form
+          </Link>
+        </Button>
       </div>
     </section>
   )
