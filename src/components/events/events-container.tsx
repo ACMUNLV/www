@@ -11,9 +11,19 @@ interface EventsContainerProps {
 
 export const EventsContainer = ({ selectedType, events, loading, onChange }: EventsContainerProps) => {
   const filteredEvents = events.filter((event) => selectedType === 'All' || event.type === selectedType)
+
+  // Get today's date at midnight
   const today = new Date()
-  today.setHours(0, 0, 0, 0) // Reset time to start of the day
-  const upcomingEvents = filteredEvents.filter((event) => event.date.getTime() >= today.getTime())
+  today.setHours(0, 0, 0, 0)
+
+  // Keep events that are today or in the future (ignoring time)
+  const upcomingEvents = filteredEvents.filter((event) => {
+    const eventDate = new Date(event.date)
+    eventDate.setHours(0, 0, 0, 0)
+    return eventDate.getTime() >= today.getTime()
+  })
+
+  // Sort the remaining events chronologically
   const sortedEvents = upcomingEvents.sort((a, b) => a.date.getTime() - b.date.getTime())
 
   return (
