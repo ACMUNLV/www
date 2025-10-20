@@ -12,15 +12,15 @@ interface EventsContainerProps {
 export const EventsContainer = ({ selectedType, events, loading, onChange }: EventsContainerProps) => {
   const filteredEvents = events.filter((event) => selectedType === 'All' || event.type === selectedType)
 
-  // Get today's date at midnight
-  const today = new Date()
-  today.setHours(0, 0, 0, 0)
+  // Get today's date at UTC midnight to avoid local timezone shifting
+  const todayUtc = new Date()
+  todayUtc.setUTCHours(0, 0, 0, 0)
 
-  // Keep events that are today or in the future (ignoring time)
+  // Keep events that are today or in the future (compare at UTC midnight)
   const upcomingEvents = filteredEvents.filter((event) => {
-    const eventDate = new Date(event.date)
-    eventDate.setHours(0, 0, 0, 0)
-    return eventDate.getTime() >= today.getTime()
+    const eventDateUtc = new Date(event.date)
+    eventDateUtc.setUTCHours(0, 0, 0, 0)
+    return eventDateUtc.getTime() >= todayUtc.getTime()
   })
 
   // Sort the remaining events chronologically
