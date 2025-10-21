@@ -1,12 +1,14 @@
 import { texts } from '@/data/text'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const Hero = () => {
   return (
-    <section className="w-full bg-primary py-48">
+    <section className="w-full bg-primary py-32">
       <div className="flex flex-col items-center space-y-4 text-center">
-        <div className="space-y-2">
+        <Image src={texts.hero.img.src} alt={texts.hero.img.alt} className="h-64 w-auto" width={400} height={400} />
+        <div className="flex flex-col items-center justify-center space-y-2">
           <h1 className="text-3xl font-bold tracking-tighter text-white sm:text-4xl md:text-5xl lg:text-6xl/none">
             {texts.hero.title}
           </h1>

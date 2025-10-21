@@ -4,6 +4,10 @@
 
 export const texts = {
   hero: {
+    img: {
+      src: '/img/logo/logo-bordered.png',
+      alt: 'ACM Hero Logo',
+    },
     title: 'Welcome to ACM at UNLV',
     subtitle: 'You will find everything about UNLV ACM here!',
   },
