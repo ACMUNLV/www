@@ -12,12 +12,15 @@ import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectVa
 import type { Dispatch, SetStateAction } from 'react'
 import type { Event } from '@/generated/prisma'
 
-const eventSchema = z.object({
-  event: z.string().min(1, { message: 'Event selection is required.' }),
-  confirm: z.string().refine((value) => value === 'confirm', {
+const eventSchema = z
+  .object({
+    event: z.string().min(1, { message: 'Event selection is required.' }),
+    confirm: z.string(),
+  })
+  .refine((data) => data.confirm === 'confirm', {
     message: "Please type 'confirm' to proceed with the deletion.",
-  }),
-})
+    path: ['confirm'],
+  })
 
 interface EventsDeleteProps {
   events: Event[]
